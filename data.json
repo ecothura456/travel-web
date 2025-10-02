@@ -1,0 +1,105 @@
+[
+    {
+      "name": "Yangon Region",
+      "image": "./image/bagan.jpg",
+      "description": "Explore the largest city and cultural landmarks.",
+      "places": [
+        {
+          "name": "Shwedagon Pagoda",
+          "image": "./image/bagan.jpg",
+          "description": "Famous golden pagoda in Yangon."
+        },
+        {
+          "name": "Bogyoke Aung San Market",
+          "image": "https://images.unsplash.com/photo-1608571424272-04a2c0db0b52?auto=format&fit=crop&w=800&q=80",
+          "description": "Popular market for souvenirs and local crafts."
+        }
+      ]
+    },
+    {
+      "name": "Mandalay Region",
+      "image": "./image/mandalay.jpg",
+      "description": "Discover temples, rivers, and historical sites.",
+      "places": [
+        {
+          "name": "Mandalay Palace",
+          "image": "./image/palace/mdy-palace",
+          "description": "Historic royal palace of Mandalay."
+        },
+        {
+          "name": "U Bein Bridge",
+          "image": "https://images.unsplash.com/photo-1590388590036-4c7f2185a8a3?auto=format&fit=crop&w=800&q=80",
+          "description": "Longest teak bridge in the world."
+        }
+      ]
+    },
+    {
+        "name": "Yangon Region",
+        "image": "./image/bagan.jpg",
+        "description": "Explore the largest city and cultural landmarks.",
+        "places": [
+          {
+            "name": "Shwedagon Pagoda",
+            "image": "https://images.unsplash.com/photo-1585288693563-08edcaac7f0f?auto=format&fit=crop&w=800&q=80",
+            "description": "Famous golden pagoda in Yangon."
+          },
+          {
+            "name": "Bogyoke Aung San Market",
+            "image": "https://images.unsplash.com/photo-1608571424272-04a2c0db0b52?auto=format&fit=crop&w=800&q=80",
+            "description": "Popular market for souvenirs and local crafts."
+          }
+        ]
+      },
+      {
+        "name": "Yangon Region",
+        "image": "./image/bagan.jpg",
+        "description": "Explore the largest city and cultural landmarks.",
+        "places": [
+          {
+            "name": "Shwedagon Pagoda",
+            "image": "https://images.unsplash.com/photo-1585288693563-08edcaac7f0f?auto=format&fit=crop&w=800&q=80",
+            "description": "Famous golden pagoda in Yangon."
+          },
+          {
+            "name": "Bogyoke Aung San Market",
+            "image": "https://images.unsplash.com/photo-1608571424272-04a2c0db0b52?auto=format&fit=crop&w=800&q=80",
+            "description": "Popular market for souvenirs and local crafts."
+          }
+        ]
+      },
+      {
+        "name": "Yangon Region",
+        "image": "./image/bagan.jpg",
+        "description": "Explore the largest city and cultural landmarks.",
+        "places": [
+          {
+            "name": "Shwedagon Pagoda",
+            "image": "https://images.unsplash.com/photo-1585288693563-08edcaac7f0f?auto=format&fit=crop&w=800&q=80",
+            "description": "Famous golden pagoda in Yangon."
+          },
+          {
+            "name": "Bogyoke Aung San Market",
+            "image": "https://images.unsplash.com/photo-1608571424272-04a2c0db0b52?auto=format&fit=crop&w=800&q=80",
+            "description": "Popular market for souvenirs and local crafts."
+          }
+        ]
+      },
+      {
+        "name": "Yangon Region",
+        "image": "./image/bagan.jpg",
+        "description": "Explore the largest city and cultural landmarks.",
+        "places": [
+          {
+            "name": "Shwedagon Pagoda",
+            "image": "https://images.unsplash.com/photo-1585288693563-08edcaac7f0f?auto=format&fit=crop&w=800&q=80",
+            "description": "Famous golden pagoda in Yangon."
+          },
+          {
+            "name": "Bogyoke Aung San Market",
+            "image": "https://images.unsplash.com/photo-1608571424272-04a2c0db0b52?auto=format&fit=crop&w=800&q=80",
+            "description": "Popular market for souvenirs and local crafts."
+          }
+        ]
+      }
+  ]
+  

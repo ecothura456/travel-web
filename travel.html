@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Travel Myanmar</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    :root{
+      --brand:#e60073;
+      --brand-dark:#c4005f;
+      --ring:#e5e5e5;
+      --text:#1f2937;
+      --muted:#6b7280;
+    }
+    *{box-sizing:border-box}
+    body, html { margin: 0; padding: 0; font-family: Arial, sans-serif; color:var(--text); }
+
+    /* HERO (home) */
+    .hero {
+      background: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e") no-repeat center/cover;
+      height: 60vh; display:flex; flex-direction:column; justify-content:center; align-items:center;
+      text-align:center; color:white; position:relative;
+    }
+    .overlay { position:absolute; inset:0; background:rgba(0,0,0,0.4); }
+    .hero-content { position:relative; z-index:1; padding:0 16px; }
+    .hero h1 { font-size:2.5rem; margin-bottom:10px; }
+    .search-bar { background:white; padding:10px 20px; border-radius:8px; display:inline-flex; gap:10px; color:black; }
+    #recButton { padding:10px 20px; background:var(--brand); color:white; border:none; border-radius:6px; cursor:pointer; font-size:16px; font-weight:bold; }
+    #recButton:hover { background:var(--brand-dark); }
+
+    /* CITIES GRID (home) */
+    h2.section-title { text-align:center; margin-top:30px; font-size:2rem; }
+    #cities-container { display:flex; flex-wrap:wrap; justify-content:center; padding:20px; gap:20px; }
+    .city-card {
+      background:#c1b8b8; border-radius:12px; width:200px; padding:15px; box-shadow:0 2px 5px rgba(0,0,0,0.2);
+      text-align:center; transition:transform 0.2s; cursor:pointer;
+    }
+    .city-card:hover { transform:scale(1.05); }
+    .city-card img { width:100%; height:120px; object-fit:cover; border-radius:10px; margin-bottom:10px; }
+
+    /* SECOND PAGE (cities -> places) */
+    #cityPage { display:none; }
+
+    .city-banner{
+      height:38vh; background:#222 center/cover no-repeat; color:#fff; position:relative;
+      display:flex; align-items:flex-end;
+    }
+    .city-banner::after{ content:""; position:absolute; inset:0; background:linear-gradient(180deg,rgba(0,0,0,.25),rgba(0,0,0,.6)); }
+    .city-banner-inner{ position:relative; z-index:1; width:100%; max-width:1100px; margin:0 auto; padding:20px 16px; }
+    .crumbs{ color:#e5e7eb; font-size:14px; margin-bottom:6px }
+    .crumbs a{ color:#fff; text-decoration:none; opacity:.9 }
+    .city-title{ margin:6px 0 2px; font-size:clamp(26px,4vw,40px); }
+    .city-sub{ margin:0 0 8px; color:#f3f4f6 }
+
+    .wrap{ max-width:1100px; margin:22px auto; padding:0 16px; }
+
+    /* Gallery grid */
+    .grid{
+      display:grid; gap:18px;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    }
+
+    .place{
+      position:relative; border-radius:14px; overflow:hidden; border:1px solid var(--ring);
+      box-shadow:0 10px 28px rgba(17,24,39,.08); background:#fff; cursor:pointer;
+    }
+    .place img{ width:100%; aspect-ratio:3 / 2; object-fit:cover; display:block; }
+    .place .overlay{
+      position:absolute; inset:auto 0 0 0; height:52%; background:linear-gradient(180deg,rgba(0,0,0,0) 0%, rgba(0,0,0,.65) 65%);
+      display:flex; flex-direction:column; justify-content:flex-end; padding:14px; color:#fff; transition:height .2s;
+    }
+    .place:hover .overlay{ height:70%; }
+    .place .title{ margin:0 0 6px; font-size:1.06rem; }
+    .place .desc{ margin:0; color:#e5e7eb; font-size:.92rem; line-height:1.35; max-height:3.1em; overflow:hidden; }
+
+    .pill{
+      position:absolute; top:10px; left:10px; background:#ffffffee; color:#111; border:1px solid var(--ring);
+      padding:4px 10px; border-radius:999px; font-size:12px; display:none;
+    }
+    .place.has-pill .pill{ display:inline-block; }
+
+    .empty {
+      text-align:center; color:#666; background:#fafafa; border:1px dashed var(--ring);
+      padding:16px; border-radius:10px; margin:8px 0 0;
+    }
+
+    .backBtn{
+      display:inline-block; margin:18px 0 24px; padding:10px 14px; background:var(--brand); color:#fff; border:none; border-radius:10px; cursor:pointer;
+    }
+    .backBtn:hover{ background:var(--brand-dark); }
+
+    /* THIRD PAGE (place details) */
+    #placePage { display:none; }
+
+    .place-banner{
+      height:42vh; background:#222 center/cover no-repeat; color:#fff; position:relative;
+      display:flex; align-items:flex-end;
+    }
+    .place-banner::after{ content:""; position:absolute; inset:0; background:linear-gradient(180deg,rgba(0,0,0,.25),rgba(0,0,0,.65)); }
+    .place-banner-inner{ position:relative; z-index:1; width:100%; max-width:1100px; margin:0 auto; padding:20px 16px; }
+    .crumbs .muted{ opacity:.85; }
+
+    .place-wrap{ max-width:1100px; margin:22px auto; padding:0 16px; }
+    .place-content{
+      display:grid; grid-template-columns:1.1fr .9fr; gap:20px;
+    }
+    @media (max-width: 900px){
+      .place-content{ grid-template-columns:1fr; }
+    }
+    .big-photo{ width:100%; border-radius:14px; overflow:hidden; border:1px solid var(--ring); box-shadow:0 10px 28px rgba(17,24,39,.08); }
+    .big-photo img{ width:100%; display:block; object-fit:cover; max-height:520px; }
+    .card{
+      background:#fff; border:1px solid var(--ring); border-radius:14px; padding:16px; box-shadow:0 10px 28px rgba(17,24,39,.06);
+    }
+    .card h3{ margin:4px 0 10px; }
+    .info-row{ margin:8px 0; color:var(--muted); }
+    .info-row strong{ color:#111; }
+    .btns{ display:flex; gap:10px; flex-wrap:wrap; margin-top:10px; }
+    .btn{
+      padding:10px 14px; background:var(--brand); color:#fff; border:none; border-radius:10px; cursor:pointer;
+    }
+    .btn.secondary{ background:#eef2ff; color:#111; border:1px solid var(--ring); }
+    .btn:hover{ background:var(--brand-dark); }
+    .btn.secondary:hover{ background:#e7ecff; }
+  </style>
+</head>
+<body>
+
+  <!-- HOME -->
+  <section class="hero" id="homeHero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1>Adventure Begins Here</h1>
+      <p>Choose from thousands of organized adventures</p>
+      <div class="search-bar">
+        <button id="recButton" onclick="showRecommendations()">Recommended Places</button>
+      </div>
+    </div>
+  </section>
+
+  <h2 class="section-title" id="citiesTitle">All Cities in Myanmar</h2>
+  <div id="cities-container"></div>
+
+  <!-- CITY / RECOMMENDED VIEW (SECOND PAGE) -->
+  <section id="cityPage">
+    <header id="banner" class="city-banner">
+      <div class="city-banner-inner">
+        <div class="crumbs"><a href="#" onclick="goBack();return false;">Home</a> · <span id="crumbCity">City</span></div>
+        <h1 class="city-title" id="cityName">City</h1>
+        <p class="city-sub" id="citySub">Top places to visit</p>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <div id="places-container" class="grid"></div>
+      <div id="emptyNotice" class="empty" style="display:none;">No places added yet for this city. Add them in the <code>data</code> object.</div>
+      <button class="backBtn" onclick="goBack()">← Back to All Cities</button>
+    </main>
+  </section>
+
+  <!-- PLACE DETAILS (THIRD PAGE) -->
+  <section id="placePage">
+    <header id="placeBanner" class="place-banner">
+      <div class="place-banner-inner">
+        <div class="crumbs">
+          <a href="#" onclick="goBack();return false;">Home</a> ·
+          <a href="#" id="crumbCityLink" onclick="goBackToCity();return false;" class="muted">City</a> ·
+          <span id="crumbPlace">Place</span>
+        </div>
+        <h1 class="city-title" id="placeTitle">Place Name</h1>
+        <p class="city-sub" id="placeCitySub">In City</p>
+      </div>
+    </header>
+
+    <main class="place-wrap">
+      <div class="place-content">
+        <div class="big-photo card">
+          <img id="placeImg" src="" alt="">
+        </div>
+        <div class="card">
+          <h3>About</h3>
+          <p id="placeReview" style="margin-top:6px;"></p>
+          <div id="rowAddress" class="info-row" style="display:none;"><strong>Address:</strong> <span id="placeAddress"></span></div>
+          <div id="rowHistory" class="info-row" style="display:none;"><strong>History:</strong> <span id="placeHistory"></span></div>
+          <div id="rowHours" class="info-row" style="display:none;"><strong>Opening Hours:</strong> <span id="placeHours"></span></div>
+          <div id="rowTicket" class="info-row" style="display:none;"><strong>Ticket:</strong> <span id="placeTicket"></span></div>
+          <div class="btns">
+            <button class="btn" onclick="goBackToCity()">← Back to City</button>
+            <button class="btn secondary" onclick="goBack()">All Cities</button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </section>
+
+  <script>
+    /* Cities (keep your image names) */
+    const cities = [
+      { name: "Yangon",       img: "Yangon.jpg" },
+      { name: "Mandalay",     img: "Mandalay.jpg" },
+      { name: "Magway",       img: "Magway.jpg" },
+      { name: "Bago",         img: "Bago.jpg" },
+      { name: "Thanintharyi", img: "Thanintharyi.jpg" },
+      { name: "Ayeyarwady",   img: "Ayeyarwady.jpg" },
+      { name: "Sagaing",      img: "Sagaing.jpg" },
+      { name: "Kachin",       img: "Kachin.jpg" },
+      { name: "Kayar",        img: "Kayar.jpg" },
+      { name: "Kayin",        img: "Kayin.jpg" },
+      { name: "Chin",         img: "Chin.jpg" },
+      { name: "Mon",          img: "Mon.jpg" },
+      { name: "Rakhine",      img: "Rakhine.jpg" },
+      { name: "Shan",         img: "Shan.jpg" }
+    ];
+
+    /* Places data (you can add details when you want) */
+    const data = {
+      Yangon: [
+        { name: "Shwedagon Pagoda", img: "Shwedagon Pagoda.jpg", review: "The most famous golden pagoda in Myanmar.",
+          details:{ address:"Shwedagon Pagoda Rd, Yangon", history:"Believed over 2,600 years old." } },
+        { name: "Kandawgyi Lake", img: "Kandawgyi.webp", review: "Big lake with nice views of Shwedagon Pagoda.",
+          details:{ address:"Kan Yeik Tha Rd, Yangon" } },
+        { name: "Theingyi Zay", img: "Theingyi zay.jpg", review: "Traditional market with food and local items." },
+        { name: "National Museum of Myanmar", img: "National Museum of Myanmar.jpg", review: "Shows Myanmar’s history and culture." }
+      ],
+      Mandalay: [
+        { name: "Mandalay Hill", img: "Mandalay Hill.jpg", review: "A hill with many temples and a great view of the city." },
+        { name: "Mahamuni Buddha Temple", img: "Mahamuni Buddha Temple.jpg", review: "Very famous temple with a golden Buddha image." },
+        { name: "Kyauk Taw Gyi Pagoda", img: "Kyauk Taw Gyi Pagoda.jpg", review: "Has a giant marble Buddha statue." },
+        { name: "U Bein Bridge", img: "U Bein Bridge.jpg", review: "Famous long teakwood bridge in Amarapura, best at sunset." },
+        { name: "Atumashi Monastery", img: "Atumashi Monastery.jpg", review: "Historic monastery architecture." },
+        { name: "Jade Market", img: "Jade Market.jpg", review: "Market where jade stones are sold and polished." }
+      ],
+      Magway: [], Bago: [], Thanintharyi: [], Ayeyarwady: [], Sagaing: [],
+      Kachin: [], Kayar: [], Kayin: [], Chin: [], Mon: [], Rakhine: [], Shan: []
+    };
+
+    /* DOM refs */
+    const container     = document.getElementById('cities-container');
+    const cityPage      = document.getElementById('cityPage');
+    const homeHero      = document.getElementById('homeHero');
+    const citiesTitle   = document.getElementById('citiesTitle');
+
+    const banner        = document.getElementById('banner');
+    const crumbCity     = document.getElementById('crumbCity');
+    const cityNameEl    = document.getElementById('cityName');
+    const citySub       = document.getElementById('citySub');
+
+    const placesGrid    = document.getElementById('places-container');
+    const emptyNotice   = document.getElementById('emptyNotice');
+
+    // Place page refs
+    const placePage     = document.getElementById('placePage');
+    const placeBanner   = document.getElementById('placeBanner');
+    const crumbCityLink = document.getElementById('crumbCityLink');
+    const crumbPlace    = document.getElementById('crumbPlace');
+    const placeTitle    = document.getElementById('placeTitle');
+    const placeCitySub  = document.getElementById('placeCitySub');
+    const placeImg      = document.getElementById('placeImg');
+    const placeReview   = document.getElementById('placeReview');
+
+    const rowAddress    = document.getElementById('rowAddress');
+    const rowHistory    = document.getElementById('rowHistory');
+    const rowHours      = document.getElementById('rowHours');
+    const rowTicket     = document.getElementById('rowTicket');
+    const placeAddress  = document.getElementById('placeAddress');
+    const placeHistory  = document.getElementById('placeHistory');
+    const placeHours    = document.getElementById('placeHours');
+    const placeTicket   = document.getElementById('placeTicket');
+
+    // Track current city for back navigation
+    let currentCity = null;
+
+    /* Render home cities */
+    function renderCities(list) {
+      container.innerHTML = "";
+      list.forEach(city => {
+        const div = document.createElement("div");
+        div.className = "city-card";
+        div.innerHTML = `
+          <img src="${city.img}" alt="${city.name}">
+          <h3>${city.name}</h3>
+        `;
+        div.onclick = () => showCity(city.name);
+        container.appendChild(div);
+      });
+    }
+
+    /* Build place cards (added click -> openPlace) */
+    function renderPlaceCards(list, showCityPill=false, fixedCity=null) {
+      placesGrid.innerHTML = "";
+      list.forEach(p => {
+        const card = document.createElement('article');
+        card.className = 'place' + (showCityPill ? ' has-pill' : '');
+        card.innerHTML = `
+          ${showCityPill && p._city ? `<span class="pill">${p._city}</span>` : ``}
+          <img src="${p.img}" alt="${p.name}">
+          <div class="overlay">
+            <h3 class="title">${p.name}</h3>
+            <p class="desc">${p.review || ""}</p>
+          </div>
+        `;
+        // click -> open third page
+        const cityNameForThisPlace = fixedCity || p._city || currentCity;
+        card.onclick = () => openPlace(cityNameForThisPlace, p.name);
+        placesGrid.appendChild(card);
+      });
+    }
+
+    /* Recommended Places (switch to second page showing places) */
+    function showRecommendations() {
+      const picks = [
+        { city:"Yangon", index:0 },
+        { city:"Yangon", index:1 },
+        { city:"Mandalay", index:3 },
+        { city:"Mandalay", index:0 }
+      ];
+      const rec = [];
+      picks.forEach(p => {
+        const arr = data[p.city] || [];
+        const item = arr[p.index];
+        if (item) rec.push({ ...item, _city:p.city });
+      });
+
+      // Swap view
+      homeHero.style.display = 'none';
+      citiesTitle.style.display = 'none';
+      container.style.display = 'none';
+      cityPage.style.display = 'block';
+      placePage.style.display = 'none';
+
+      // Banner for recommended
+      banner.style.backgroundImage = `url('Myanmar.jpg')`;
+      crumbCity.textContent = "Recommended";
+      cityNameEl.textContent = "Recommended Places";
+      citySub.textContent = "Top picks across Myanmar";
+
+      currentCity = null; // not in a specific city
+      if (rec.length === 0) {
+        emptyNotice.style.display = 'block';
+        placesGrid.innerHTML = "";
+      } else {
+        emptyNotice.style.display = 'none';
+        renderPlaceCards(rec, true, null);
+      }
+    }
+
+    /* Show a specific city (SECOND PAGE) */
+    function showCity(city) {
+      // Swap to city view
+      homeHero.style.display = 'none';
+      citiesTitle.style.display = 'none';
+      container.style.display = 'none';
+      cityPage.style.display = 'block';
+      placePage.style.display = 'none';
+
+      // City banner uses local "<City>.jpg"
+      banner.style.backgroundImage = `url('${city}.jpg')`;
+      crumbCity.textContent = city;
+      cityNameEl.textContent = city;
+      citySub.textContent = `Top places to visit in ${city}`;
+
+      currentCity = city;
+      const list = data[city] || [];
+      if (list.length === 0) {
+        emptyNotice.style.display = 'block';
+        placesGrid.innerHTML = "";
+      } else {
+        emptyNotice.style.display = 'none';
+        renderPlaceCards(list, false, city);
+      }
+    }
+
+    /* Open a place (THIRD PAGE) */
+    function openPlace(city, placeName) {
+      if (!city) { alert("Missing city for this place."); return; }
+      const list = data[city] || [];
+      const place = list.find(p => p.name === placeName);
+      if (!place) { alert("Place not found."); return; }
+
+      // Hide others, show place page
+      homeHero.style.display = 'none';
+      citiesTitle.style.display = 'none';
+      container.style.display = 'none';
+      cityPage.style.display = 'none';
+      placePage.style.display = 'block';
+
+      // Banner + crumbs
+      placeBanner.style.backgroundImage = `url('${place.img}')`;
+      crumbCityLink.textContent = city;
+      crumbPlace.textContent = place.name;
+      placeTitle.textContent = place.name;
+      placeCitySub.textContent = `In ${city}`;
+
+      // Main content
+      placeImg.src = place.img;
+      placeImg.alt = place.name;
+      placeReview.textContent = place.review || "";
+
+      // Optional details
+      const d = place.details || {};
+      if (d.address) { rowAddress.style.display = 'block'; placeAddress.textContent = d.address; } else { rowAddress.style.display = 'none'; }
+      if (d.history) { rowHistory.style.display = 'block'; placeHistory.textContent = d.history; } else { rowHistory.style.display = 'none'; }
+      if (d.hours || d.openingHours) { rowHours.style.display = 'block'; placeHours.textContent = d.hours || d.openingHours; } else { rowHours.style.display = 'none'; }
+      if (d.ticket || d.price) { rowTicket.style.display = 'block'; placeTicket.textContent = d.ticket || d.price; } else { rowTicket.style.display = 'none'; }
+
+      // Ensure currentCity is set for back navigation
+      currentCity = city;
+    }
+
+    /* Back to home (ALL cities) */
+    function goBack() {
+      placePage.style.display = 'none';
+      cityPage.style.display = 'none';
+      homeHero.style.display = 'flex';
+      container.style.display = 'flex';
+      citiesTitle.style.display = 'block';
+    }
+
+    /* Back to the current city (from place page) */
+    function goBackToCity() {
+      if (currentCity) {
+        showCity(currentCity);
+      } else {
+        goBack();
+      }
+    }
+
+    /* Init */
+    renderCities(cities);
+  </script>
+</body>
+</html>
