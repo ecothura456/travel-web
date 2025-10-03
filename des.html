@@ -1,27 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Destinations - Myanmar Travel</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet"/>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+
   <style>
-    .region-card img, .place-card img {
-      height: 200px;
+    :root{
+      --brand:#198754;
+      --ink:#1f2937;
+      --muted:#6b7280;
+      --ring:#e5e7eb;
+      --card:#ffffff;
+      --bg:#f7f7fb;
+    }
+
+    html,body{background:var(--bg); color:var(--ink); font-family:'Poppins',sans-serif;}
+    a{ text-decoration:none }
+    .container{ max-width:1100px }
+
+    .navbar-gray{
+      background: rgba(20, 20, 20, 0.35) !important;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+    .navbar .navbar-brand{ letter-spacing:.5px }
+    .navbar .nav-link{ color:#f3f4f6 !important; opacity:.95 }
+    .navbar .nav-link.active,
+    .navbar .nav-link:hover{ color:#ffffff !important; opacity:1 }
+
+    .page-hero{
+      position: relative;
+      padding: 80px 0 60px;
+      background:
+        radial-gradient(1200px 300px at 50% -80px, rgba(25,135,84,.18), transparent 60%),
+        linear-gradient(180deg, rgba(0,0,0,0.35), rgba(0,0,0,0.0)),
+        url('./image/B01.jpg') center/cover no-repeat;
+      color:#b4acac;
+      text-align:center;
+    }
+    .page-hero h1{
+      font-weight:700; font-size: clamp(1.8rem, 4vw, 2.6rem);
+      text-shadow: 0 2px 16px rgba(0,0,0,.35);
+      letter-spacing:.5px;
+    }
+
+    .section-title{
+      font-weight:700; letter-spacing:.4px; text-align:center; margin-bottom: 1.25rem;
+    }
+
+    .region-card, .place-card{
+      border: 1px solid var(--ring);
+      border-radius: 18px;
+      overflow: hidden;
+      background:var(--card);
+      transition: transform .28s ease, box-shadow .28s ease;
+    }
+    .region-card:hover, .place-card:hover{
+      transform: translateY(-6px);
+      box-shadow: 0 18px 40px -18px rgba(0,0,0,.3);
+    }
+    .region-card img, .place-card img{
+      height: 220px;
       object-fit: cover;
     }
-    .back-btn, .detail-btn {
+    .card-body{ padding: 16px 18px 18px; }
+    .card-title{ font-weight: 700; margin-bottom: .35rem; }
+    .card-text{ color: var(--muted); margin-bottom: .75rem; }
+
+    .detail-btn, .back-btn{
       cursor: pointer;
-      text-decoration: underline;
+      font-weight: 600;
+      display: inline-flex; align-items:center; gap:6px;
     }
-    .back-btn { color: #acb2bd; }
-    .detail-btn { color: #383a39; margin-left: 10px; }
+    .detail-btn{ color: var(--brand); }
+    .detail-btn::after{ content: "›"; transform: translateY(-1px); }
+    .back-btn{ color: #374151; }
+    .back-btn::before{ content: "‹"; margin-right: 6px; transform: translateY(-1px); }
+
+    .soft-divider{
+      height:1px; background: linear-gradient(90deg, transparent, var(--ring), transparent);
+      margin: 1.25rem 0;
+    }
+
+    @media (max-width: 575.98px){
+      .page-hero{ padding: 70px 0 44px }
+      .region-card img, .place-card img{ height: 200px }
+    }
   </style>
 </head>
 <body>
 
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-secondary shadow-sm sticky-top">
+<nav class="navbar navbar-expand-lg navbar-dark navbar-gray shadow-sm sticky-top">
   <div class="container">
     <a class="navbar-brand fw-bold" href="#">MESC</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#travelNavbar" aria-controls="travelNavbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,23 +108,22 @@
       <ul class="navbar-nav ms-auto">
         <li class="nav-item"><a class="nav-link active" href="./index.html">Home</a></li>
         <li class="nav-item"><a class="nav-link active" href="./des.html">Destinations</a></li>
-        <!-- <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Destinations</a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Asia</a></li>
-            <li><a class="dropdown-item" href="#">Europe</a></li>
-            <li><a class="dropdown-item" href="#">America</a></li>
-          </ul>
-        </li> -->
         <li class="nav-item"><a class="nav-link" href="./Festivals.html">Festivals</a></li>
         <li class="nav-item"><a class="nav-link" href="./Foods.html">Foods</a></li>
-
+      </ul>
     </div>
   </div>
 </nav>
-<!-- Main Container -->
+
+<header class="page-hero">
+  <div class="container">
+    <h1>Regions & States of Myanmar</h1>
+  </div>
+</header>
+
 <section class="py-5">
   <div class="container">
+    <div class="soft-divider"></div>
     <div id="content"></div>
   </div>
 </section>
@@ -67,19 +143,20 @@ const content = document.getElementById('content');
 
 // Show all regions
 function showRegions() {
-  content.innerHTML = '<h2 class="mb-4 text-center">Regions & States of Myanmar</h2><div class="row g-4" id="regions-container"></div>';
+  content.innerHTML = '<h2 class="section-title">Explore by Region</h2><div class="row g-4" id="regions-container"></div>';
   const container = document.getElementById('regions-container');
 
   regionsData.forEach(region => {
     const col = document.createElement('div');
-    col.className = 'col-md-4';
+    col.className = 'col-md-6 col-lg-4';
     col.innerHTML = `
-      <div class="card region-card shadow-sm">
+      <div class="card region-card shadow-sm h-100">
         <img src="${region.image}" class="card-img-top" alt="${region.name}">
-        <div class="card-body">
+        <div class="card-body d-flex flex-column">
           <h5 class="card-title">${region.name}</h5>
-          <p class="card-text">${region.description}</p>
-          <span class="back-btn detail-btn" onclick="showPlaces('${region.name}')">Explore Places</span>
+          <div class="mt-auto">
+            <span class="detail-btn" onclick="showPlaces('${region.name}')">Explore Places</span>
+          </div>
         </div>
       </div>
     `;
@@ -93,21 +170,25 @@ function showPlaces(regionName) {
   if (!region) return;
 
   content.innerHTML = `
-    <h2 class="mb-4">${region.name} <span class="back-btn" onclick="showRegions()">⬅ Back</span></h2>
+    <div class="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-2">
+      <h2 class="section-title m-0">${region.name}</h2>
+      <span class="back-btn" onclick="showRegions()">Back to all regions</span>
+    </div>
     <div class="row g-4" id="places-container"></div>
   `;
   const container = document.getElementById('places-container');
 
   region.places.forEach(place => {
     const col = document.createElement('div');
-    col.className = 'col-md-4';
+    col.className = 'col-md-6 col-lg-4';
     col.innerHTML = `
-      <div class="card place-card shadow-sm">
+      <div class="card place-card shadow-sm h-100">
         <img src="${place.image}" class="card-img-top" alt="${place.name}">
-        <div class="card-body">
+        <div class="card-body d-flex flex-column">
           <h5 class="card-title">${place.name}</h5>
-          <p class="card-text">${place.description}</p>
-          <span class="detail-btn" onclick="showPlaceDetail('${regionName}', '${place.name}')">Detail</span>
+          <div class="mt-auto">
+            <span class="detail-btn" onclick="showPlaceDetail('${regionName}', '${place.name}')">Detail</span>
+          </div>
         </div>
       </div>
     `;
@@ -123,13 +204,14 @@ function showPlaceDetail(regionName, placeName) {
   if (!place) return;
 
   content.innerHTML = `
-    <h2 class="mb-4">${place.name} <span class="back-btn" onclick="showPlaces('${regionName}')">⬅ Back</span></h2>
+    <div class="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-3">
+      <h2 class="section-title m-0">${place.name}</h2>
+      <span class="back-btn" onclick="showPlaces('${regionName}')">Back to ${regionName}</span>
+    </div>
     <div class="card mb-4 shadow-sm">
       <img src="${place.image}" class="card-img-top" alt="${place.name}">
       <div class="card-body">
         <h5 class="card-title">${place.name}</h5>
-        <p class="card-text">${place.description}</p>
-        <p>More detailed information about ${place.name} can go here.</p>
       </div>
     </div>
   `;
