@@ -98,7 +98,8 @@
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-dark navbar-gray shadow-sm sticky-top">
+<nav class="navbar navbar-expand-lg navbar-gray shadow-sm sticky-top" style="background: rgba(96, 94, 94, 0.7);">
+
   <div class="container">
     <a class="navbar-brand fw-bold" href="#">MESC</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#travelNavbar" aria-controls="travelNavbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -108,9 +109,24 @@
       <ul class="navbar-nav ms-auto">
         <li class="nav-item"><a class="nav-link active" href="./index.html">Home</a></li>
         <li class="nav-item"><a class="nav-link active" href="./des.html">Destinations</a></li>
+        <!-- <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Destinations</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Asia</a></li>
+            <li><a class="dropdown-item" href="#">Europe</a></li>
+            <li><a class="dropdown-item" href="#">America</a></li>
+          </ul>
+        </li> -->
         <li class="nav-item"><a class="nav-link" href="./Festivals.html">Festivals</a></li>
         <li class="nav-item"><a class="nav-link" href="./Foods.html">Foods</a></li>
       </ul>
+      <form class="d-flex position-relative">
+        <input class="form-control me-2 rounded-pill" type="search" id="searchInput" placeholder="Search destinations...">
+        <!-- Dropdown search results -->
+        <ul id="searchDropdown" class="list-group position-absolute w-100 shadow-sm"
+            style="top:100%; left:0; z-index:1000; display:none;"></ul>
+      </form>
+
     </div>
   </div>
 </nav>
