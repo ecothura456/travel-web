@@ -1,7 +1,7 @@
 [
   {
     "name": "Yangon Region",
-    "image": "./image/yangon.jpg",
+    "image": "./image/r-ygn.jpg",
     "description": "Myanmar’s largest city with colonial architecture and golden pagodas.",
     "places": [
       {
@@ -18,7 +18,7 @@
   },
   {
     "name": "Mandalay Region",
-    "image": "./image/mandalay.jpg",
+    "image": "./image/r-mdy.jpg",
     "description": "Cultural heart of Myanmar with temples and royal history.",
     "places": [
       {
@@ -35,7 +35,7 @@
   },
   {
     "name": "Sagaing Region",
-    "image": "./image/sagaing.jpg",
+    "image": "./image/r-sgg.jpg",
     "description": "Famous for Buddhist monasteries and natural landscapes.",
     "places": [
       {
@@ -52,7 +52,7 @@
   },
   {
     "name": "Magway Region",
-    "image": "./image/magway.jpg",
+    "image": "./image/r-mgw.jpg",
     "description": "Known for ancient pagodas and dry central plains.",
     "places": [
       {
@@ -69,7 +69,7 @@
   },
   {
     "name": "Bago Region",
-    "image": "./image/bago.jpg",
+    "image": "./image/r-bgo.jpg",
     "description": "A historic region with golden pagodas.",
     "places": [
       {
@@ -86,7 +86,7 @@
   },
   {
     "name": "Ayeyarwady Region",
-    "image": "./image/ayeyarwady.jpg",
+    "image": "./image/r-ayd.jpg",
     "description": "Delta region with rivers, farms, and beaches.",
     "places": [
       {
@@ -103,7 +103,7 @@
   },
   {
     "name": "Tanintharyi Region",
-    "image": "./image/tanintharyi.jpg",
+    "image": "./image/r-tni.jpg",
     "description": "Southern coastal region with islands and marine life.",
     "places": [
       {
