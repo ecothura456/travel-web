@@ -205,24 +205,12 @@ function showPlaces(regionName) {
 
 // Show place detail
 function showPlaceDetail(regionName, placeName) {
-  const region = regionsData.find(r => r.name === regionName);
-  if (!region) return;
-  const place = region.places.find(p => p.name === placeName);
-  if (!place) return;
-
-  content.innerHTML = `
-    <div class="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-3">
-      <h2 class="section-title m-0">${place.name}</h2>
-      <span class="btn btn-outline-dark rounded-pill" onclick="showPlaces('${regionName}')">Back to ${regionName}</span>
-    </div>
-    <div class="card mb-4 shadow-sm">
-      <img src="${place.image}" class="card-img-top" alt="${place.name}">
-      <div class="card-body">
-        <h5 class="card-title">${place.name}</h5>
-      </div>
-    </div>
-  `;
+  const encodedRegion = encodeURIComponent(regionName);
+  const encodedPlace = encodeURIComponent(placeName);
+  // Redirect to a new page (detail.html)
+  window.location.href = `detail.html?region=${encodedRegion}&place=${encodedPlace}`;
 }
+
 </script>
 
 <script>

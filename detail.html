@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Place Details - Myanmar Travel</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet"/>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <style>
+    :root {
+      --brand:#198754;
+      --ink:#1f2937;
+      --muted:#6b7280;
+      --ring:#e5e7eb;
+      --bg:#f7f7fb;
+      --card:#fff;
+    }
+
+    body {
+      background: var(--bg);
+      font-family: 'Poppins', sans-serif;
+      color: var(--ink);
+    }
+
+    .page-hero {
+      position: relative;
+      padding: 80px 0 60px;
+      background:
+        radial-gradient(1200px 300px at 50% -80px, rgba(25,135,84,.18), transparent 60%),
+        linear-gradient(180deg, rgba(0,0,0,0.35), rgba(0,0,0,0.0)),
+        url('./image/B01.jpg') center/cover no-repeat;
+      color: #eaeaea;
+      text-align: center;
+    }
+
+    .page-hero h1 {
+      font-weight: 700;
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+      text-shadow: 0 2px 16px rgba(0,0,0,.35);
+    }
+
+    .card {
+      border: 1px solid var(--ring);
+      border-radius: 18px;
+      overflow: hidden;
+      background: var(--card);
+      box-shadow: 0 10px 30px -10px rgba(0,0,0,0.25);
+    }
+
+    .card img {
+      width: 100%;
+      height: 380px;
+      object-fit: cover;
+    }
+
+    .card-body {
+      padding: 20px;
+    }
+
+    .card-title {
+      font-weight: 700;
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    .card-text {
+      color: var(--muted);
+      line-height: 1.7;
+    }
+
+    .back-btn {
+      display: inline-block;
+      margin-top: 20px;
+      color: var(--brand);
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .back-btn:hover {
+      text-decoration: underline;
+    }
+
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-gray shadow-sm sticky-top" style="background: rgba(96, 94, 94, 0.7);">
+  <div class="container">
+    <a class="navbar-brand fw-bold text-white" href="./index.html">ASME</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#travelNavbar" aria-controls="travelNavbar" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="travelNavbar">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link text-white" href="./index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="./des.html">Destinations</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="./Festivals.html">Festivals</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="./Foods.html">Foods</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header class="page-hero">
+  <h1 id="placeTitle">Loading...</h1>
+</header>
+
+<section class="py-5">
+  <div class="container">
+    <div id="placeDetail" class="col-lg-10 mx-auto"></div>
+  </div>
+</section>
+
+<script>
+  // Get query parameters from URL
+  const params = new URLSearchParams(window.location.search);
+  const regionName = params.get("region");
+  const placeName = params.get("place");
+
+  fetch("des.json")
+    .then(res => res.json())
+    .then(data => {
+      const region = data.find(r => r.name === regionName);
+      if (!region) {
+        document.getElementById("placeDetail").innerHTML = "<p>Region not found.</p>";
+        return;
+      }
+      const place = region.places.find(p => p.name === placeName);
+      if (!place) {
+        document.getElementById("placeDetail").innerHTML = "<p>Place not found.</p>";
+        return;
+      }
+
+      document.getElementById("placeTitle").textContent = place.name;
+
+      document.getElementById("placeDetail").innerHTML = `
+        <div class="card">
+          <img src="${place.image}" alt="${place.name}">
+          <div class="card-body">
+            <h3 class="card-title">${place.name}</h3>
+            ${place.review ? `<p class="fw-semibold">${place.review}</p>` : ""}
+            ${place.summary ? `<p class="card-text">${place.summary}</p>` : ""}
+            ${place.detail ? `<p class="card-text">${place.detail}</p>` : ""}
+            <a href="./des.html" class="back-btn">← Back to Destinations</a>
+          </div>
+        </div>
+      `;
+    })
+    .catch(err => {
+      console.error("Error loading JSON:", err);
+      document.getElementById("placeDetail").innerHTML = "<p>Failed to load details.</p>";
+    });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

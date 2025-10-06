@@ -6,13 +6,35 @@
     "places": [
       {
         "name": "Shwedagon Pagoda",
-        "image": "./image/yangon/shwedagon.jpg",
-        "description": "The most sacred Buddhist pagoda in Myanmar."
+        "image": "image/Shwedagon Pagoda.jpg",
+        "description": "The most sacred Buddhist pagoda in Myanmar.",
+        "detail": "The Shwedagon Pagoda is the shining heart of Yangon and the most sacred Buddhist site in Myanmar.Rising nearly 100 meters above the city on Singuttara Hill, the golden stupa can be seen from almost anywhere in Yangon, glowing beautifully at sunrise, sunset, and under the night lights.According to legend, the pagoda is over <strong>2,500 </strong>years old, enshrining sacred relics of <strong>the Gautama Buddha</strong>, including <strong>eight strands of his hair</strong>.Historical evidence suggests the pagoda was likely built between the <b>6th and 10th centuries AD</b>, and over time, it has been enlarged and renovated by many Burmese kings.The pagoda has survived earthquakes, most notably in <b>1768</b>, after which it was rebuilt to its current height. Generations of monarchs and devotees donated gold, jewels, and precious stones, giving Shwedagon its dazzling brilliance today. The entire structure is covered with real gold plates, and the top is decorated with diamonds, rubies, and other precious gems, making it one of the most breathtaking religious monuments in the world.For centuries, Shwedagon has been a place of devotion, pilgrimage, and celebration.Visitors can walk barefoot around its marble terraces, observe local worshippers lighting candles and incense, and experience the peaceful yet vibrant spiritual atmosphere.<u>A visit to Yangon would not be complete without experiencing the Shwedagon Pagoda — a timeless symbol of Myanmar’s heritage, faith, and beauty.</u></p>"
       },
       {
+        "name": "National Museum of Myanmar",
+        "image": "image/National Mesum of Yangon.jpg",
+        "description": "Shows Myanmar’s history and culture.",
+        "detail": "<p>The National Museum Yangon is Myanmar’s principal museum of <b>history, art, and culture</b>. Founded in <strong>1952</strong> and relocated in <strong>1996</strong> to its current five-story building on Pyay Road, it houses a diverse collection of more than <i>4,000</i> artifacts, including ancient relics, royal regalia, traditional arts, inscriptions, sculptures, and memorabilia.Among its most famous treasures is the <mark>Lion Throne</mark>, the only surviving throne of Burmese monarchs, preserved through war and upheaval.The museum is organized into multiple galleries that trace Myanmar’s cultural evolution—from prehistoric civilizations to medieval dynasties, and through to modern traditions and ethnic heritage.With beautifully curated displays, a calm and respected museum environment, and a focus on both national identity and multicultural roots,<u>the National Museum Yangon offers visitors a compelling journey into the soul of Myanmar’s past and present.</u></p>"
+
+      },
+      {
+        "name": "Kandawgyi Lake & Karaweik Palace",
+      "image": "image/KandawgyiLake.jpg",
+      "description": "Big lake with nice views of Shwedagon Pagoda.",
+      "detail": "<p>Nestled in the heart of Yangon, just a short walk from the magnificent <mark>Shwedagon Pagoda</mark>, lies <mark>Kandawgyi Lake—</mark>one of the city’s most beloved landmarks. Its name means “Great Royal Lake” in Burmese, and it truly lives up to its title with scenic beauty, cultural attractions, and peaceful green spaces.Kandawgyi is not a natural lake—it was built during the British colonial era as a reservoir to supply clean water to Yangon. Today, it has become much more than that: a favorite spot for relaxation, recreation, and cultural experiences.The lake covers around <b>150 acres</b>, with a wooden boardwalk running along its edges, perfect for a leisurely stroll at sunrise or sunset.Perhaps the most striking sight at Kandawgyi is the golden <i>Karaweik Hall</i>. Shaped like a royal barge, this stunning structure appears to float on the water. Built in the 1970s, it now serves as a cultural hall and restaurant, where visitors can enjoy traditional Myanmar cuisine while watching cultural performances.<u>Whether you’re looking to capture photos of Karaweik glowing at sunset, enjoy a family outing at the parks, or simply relax with the serene view of the Shwedagon Pagoda reflected in the water, Kandawgyi offers something for everyone</u>.</p>"
+    },
+      {
+        "name": "SHOPPING MALLS IN YANGON",
+        "image": "image/SH0PPINGMALL.jpg",
+        "description": "A lively mix of modern malls and traditional markets",
+        "detail": "<p><b>Junction City</b> : A modern mall in downtown Yangon with international brands, restaurants, cafes, and even a cinema.</p><p><b>Myanmar Plaza</b> : A popular spot for shopping and dining, with a variety of fashion, electronics, and lifestyle stores.</p><p><b>Junction Square</b> : Known for local boutiques, food courts, and entertainment options.</p><p><b>Bogyoke Aung San Market</b> : Not a mall, but a must-visit! Famous for handicrafts, gems, jewelry, and traditional souvenirs<p><b>Hledan Center</b> : Popular among Yangon’s youth and local families as a one-stop place for shopping, dining and casual hangouts.</p></p>"
+      },
+
+      {
         "name": "Bogyoke Aung San Market",
-        "image": "./image/yangon/market.jpg",
-        "description": "A historic marketplace with handicrafts, gems, and souvenirs."
+        "image": "image/Bogyoke_Aung_San_Market.JPG",
+        "description": "A historic marketplace with handicrafts, gems, and souvenirs.",
+        "detail": "Bogyoke Aung San Market is not only a shopping destination but also a cultural and historical landmark in Yangon. Built in 1926 during the British colonial period, the market reflects the charm of old Yangon with its British colonial architecture, high ceilings, and maze-like corridors lined with colorful stalls. The market is especially famous for its precious gemstones, particularly Burmese rubies, sapphires, and jade, which are among the most sought-after souvenirs for visitors. Art lovers will find traditional paintings, lacquerware, and handmade crafts representing Myanmar’s diverse ethnic artistry.Beyond shopping, the market offers a chance to experience the rhythm of daily local life. Visitors can stop by tea shops and small eateries within and around the bazaar to taste authentic Burmese snacks like mohinga (rice noodle soup) and laphet thoke (tea leaf salad). The market is typically open from 9:00 AM to 5:00 PM, and the best time to visit is in the morning, when it’s lively yet not overly crowded. Whether you’re looking for souvenirs, exploring history, or capturing the local atmosphere, Bogyoke Aung San Market remains one of Yangon’s must-visit landmarks, blending the city’s colonial past with its vibrant modern culture."
       }
     ]
   },
@@ -55,6 +77,13 @@
     "image": "./image/r-mgw.jpg",
     "description": "Known for ancient pagodas and dry central plains.",
     "places": [
+      {
+        "name": "Shwe Set Taw",
+        "image": "image/Shwesettaw.jpg",
+        "description": "Natural Buddha footprints and religious and cultural landmark",
+        "detail": "<p><b>Shwe Set Taw</b> is one of Myanmar’s most <b>sacred Buddhist pilgrimage sites</b>, located in <b>Minbu Township, Magway Region</b>, about <b>36 miles</b> from Magway city. It is famous for its natural Buddha footprints, believed to have been left by Gautama Buddha and later enshrined in gold at the pagoda. The site is a major center of <strong>faith and devotion</strong>, attracting thousands of pilgrims, especially during the <strong>Shwe Set Taw Pagoda Festival</strong> from mid-February to mid-April. During the festival, the banks of Mann Creek come alive with <b>market stalls selling handicrafts, herbal remedies, and local delicacies</b>, while pilgrims participate in prayers and traditional rituals.Shwe Set Taw features <b>two main footprint sites</b>: <mark>Upper Settawyar</mark>, accessible by a historic stairway and offering stunning panoramic views and cultural motifs, and <mark>Lower Settawyar</mark>, at the foot of the hill, surrounded by <b>bamboo lodges and the cool waters of Mann Creek</b>, perfect for relaxing after a day of pilgrimage. The surrounding area also offers natural beauty, including lush greenery and the nearby <mark>Shwesettaw Wildlife Sanctuary</mark>, home to <b>deer, wild boar, star tortoises, and various bird species</b>.Shwe Set Taw offers a unique blend of <b>spirituality, culture, and nature</b>. Whether you’re a pilgrim seeking a sacred experience or a traveler eager to explore Myanmar’s hidden gems, the pagoda promises serenity, cultural immersion, and breathtaking views.<u> A visit here is more than sightseeing—it’s a journey into Myanmar’s religious heart and rich traditions.</u></p>"
+
+      },
       {
         "name": "Myathalun Pagoda",
         "image": "./image/magway/myathalun.jpg",
@@ -143,7 +172,14 @@
       {
         "name": "Inle Lake",
         "image": "./image/shan/inle.jpg",
-        "description": "Famous for floating gardens and leg-rowing fishermen."
+        "description": "Famous for floating gardens and leg-rowing fishermen.",
+        "detail": "<p><b>Inle Lake, situated in the heart of <b>Shan State</b>, is one of Myanmar’s most picturesque and culturally rich destinations. Surrounded by rolling green hills, the lake sits about <b>900 meters above sea level</b> and stretches over <b>22 kilometers</b>, making it a peaceful haven filled with life and tradition. The <b>Intha people</b>, known for their graceful <strong>leg-rowing technique</strong>, live in charming <b>stilt houses</b> built directly over the water. As you glide across the lake by boat, you’ll see <b>floating gardens</b> where locals grow vegetables on layers of water hyacinth and soil — a fascinating sight that shows their deep connection with nature. Around the lake, <b>colorful markets</b> rotate between villages, offering handmade crafts, Shan noodles, and local snacks. Spiritual life flourishes here too, with <b>golden pagodas and monasteries</b> scattered along the shores, such as the <b>Indein Pagoda complex</b>. If you visit between <b>November and February</b>, the weather is cool and the skies are clear — perfect for filming sunrises that paint the water in gold and silver. The highlight of the year is the <b>Phaung Daw Oo Pagoda Festival<b>, where elaborately decorated boats carry sacred Buddha images around the lake, accompanied by music and celebration. From peaceful mornings with mist over the water to lively festivals and warm smiles of the locals, Inle Lake offers a perfect blend of <b>natural beauty, cultural depth, and timeless charm</b> — ideal for a travel vlog full of authenticity and wonder.</p>"
+      },
+      {
+        "name": "Phaung Daw Oo Pagoda",
+        "image": "image/Phaung-Daw-Oo-Pagoda.jpg",
+        "description": "Spiritual Jewel of Inle Lake",
+        "detail": "<p><b>Phaung Daw Oo Pagoda</b> is one of Myanmar’s most <b>renowned Buddhist pilgrimage sites</b>, located on the serene <b>Inle Lake in Shan State</b>. The pagoda is famous for its <b>five small gilded Buddha images</b>, which over centuries have been covered with layers of gold leaf applied by devoted pilgrims. It is considered a <b>sacred center of faith</b>, attracting both local worshippers and international visitors.The <b>annual Phaung Daw Oo Pagoda Festival</b>(typically September–October) is the highlight of the year. During this festival, the five Buddha images are placed on traditional <b>ornate longboats</b> and paraded across Inle Lake, accompanied by <b>boat races, traditional music, and religious ceremonies</b>. The festival draws thousands of devotees and tourists, creating a lively cultural spectacle.The surrounding area offers more than spirituality: travelers can explore <b>floating gardens, stilted villages, and the unique lifestyle of the Intha people</b>. Visiting Phaung Daw Oo Pagoda provides a <b>blend of religious devotion, cultural immersion, and scenic lake views</b>, making it a must-see destination in Shan State.</p>"
       },
       {
         "name": "Taunggyi Balloon Festival",
@@ -210,14 +246,15 @@
     "places": [
       {
         "name": "Kyaiktiyo Pagoda (Golden Rock)",
-        "image": "./image/mon/goldenrock.jpg",
-        "description": "A gravity-defying golden boulder perched on a cliff."
+        "image": "image/Kyaiktiyo.JPG",
+        "description": "A gravity-defying golden boulder perched on a cliff.",
+        "detail": "<p>Kyaiktiyo is a small pilgrim town in the mountains of Mon State, about <b>200</b> km from Yangon, famed for its extraordinary Golden Rock Pagoda — a large boulder covered in gold leaf, precariously balancing on the edge of a cliff.To reach the pagoda visitors typically travel to <b>Kinpun</b>, the base town, and then continue by open-air truck up the mountain road. The road from Kinpun to Kyaiktiyo is steep and winding, and the last 2 km often involve walking.<u>The journey, the atmosphere, and the panoramic views make it a powerful spiritual and visual experience. It’s especially magical at sunrise or sunset, when the light plays off the golden surfaces and the surrounding mist.</u></p>"
       },
       {
         "name": "Mawlamyine",
         "image": "./image/mon/mawlamyine.jpg",
-        "description": "Colonial city with beautiful views of the Thanlwin River."
-      }
+        "description": "Colonial city with beautiful views of the Thanlwin River."}
+        
     ]
   },
   {
@@ -232,8 +269,9 @@
       },
       {
         "name": "Ngapali Beach",
-        "image": "./image/rakhine/ngapali.jpg",
-        "description": "One of Myanmar’s most beautiful beaches."
+        "image": "image/Ngapali.jpg",
+        "description": "One of Myanmar’s most beautiful beaches.",
+        "detail":"<p>Ngapali Beach is often described as Myanmar’s most beautiful stretch of coastline — a place where soft white sand, clear turquoise waters, and swaying palm trees create a scene of pure relaxation. Located on the Bay of Bengal in Rakhine State, Ngapali feels unspoiled and peaceful, making it the perfect escape from the bustle of city life.The journey is simple: a short 45-minute flight from Yangon takes you to Thandwe Airport, just minutes from the beach. Once there, life moves at a slower pace. You can swim in the calm sea, cycle along the coast, or explore small fishing villages nearby. For adventure, boat trips to nearby islands offer opportunities for snorkeling and exploring coral reefs.One of Ngapali’s highlights is its seafood. Freshly caught prawns, squid, and fish are grilled and served right by the shore, offering a taste of local flavor at its best. And when evening comes, Ngapali truly shines — sunsets over the Bay of Bengal are some of the most breathtaking in Myanmar.Relaxation, couples, nature lovers, and anyone seeking a peaceful getaway.</u></p>"
       }
     ]
   },
