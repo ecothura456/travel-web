@@ -138,13 +138,26 @@
 
 <script>
 let regionsData = [];
+let allDestinations = [];
 
 // Load JSON
 fetch('des.json')
   .then(res => res.json())
   .then(data => {
     regionsData = data;
-    showRegions();
+
+    // If the URL includes ?region=Region%20Name, show that region directly.
+    const urlParams = new URLSearchParams(window.location.search);
+    const regionFromURL = urlParams.get("region"); // already decoded by browser
+    if (regionFromURL) {
+      const regionExists = regionsData.find(r => r.name === regionFromURL);
+      if (regionExists) showPlaces(regionFromURL);
+      else showRegions();
+    } else showRegions();
+  })
+  .catch(err => {
+    console.error("Error loading JSON:", err);
+    content.innerHTML = "<p>Failed to load destinations.</p>";
   });
 
 const content = document.getElementById('content');
@@ -215,14 +228,29 @@ function showPlaceDetail(regionName, placeName) {
 </script>
 
 <script>
-  let destinations = [];
+  let allSearchItems = [];
 
   // Load JSON file
   fetch("des.json")
     .then(response => response.json())
     .then(data => {
-      destinations = data;
-    })
+      allSearchItems =[
+      ...data.map(region => ({
+        name: region.name,
+        image: region.image,
+        link: `des.html?region=${encodeURIComponent(region.name)}`,
+        type: "Region"
+      })),
+      ...data.flatMap(region =>
+        region.places.map(place => ({
+          name: place.name,
+          image: place.image,
+          link: `detail.html?region=${encodeURIComponent(region.name)}&place=${encodeURIComponent(place.name)}`,
+          type: "Place"
+        }))
+      )
+    ];
+  })
     .catch(error => console.error("Error loading JSON:", error));
 
   const searchInput = document.getElementById("searchInput");
@@ -237,22 +265,27 @@ function showPlaceDetail(regionName, placeName) {
       return;
     }
 
+
     // Filter results
-    const filtered = destinations.filter(item => item.name.toLowerCase().includes(query));
+    const filtered = allSearchItems.filter(item =>
+    item.name.toLowerCase().includes(query)
+  );
 
-    if (filtered.length === 0) {
-      searchDropdown.innerHTML = `<li class="list-group-item text-center text-muted">No results found</li>`;
-    } else {
-      filtered.forEach(item => {
-        const li = document.createElement("li");
-        li.className = "list-group-item d-flex align-items-center justify-content-between";
-
-        li.innerHTML = `
-          <div class="d-flex align-items-center">
-            <img src="${item.image}" class="rounded-circle me-2" width="40" height="40" alt="${item.name}">
-            
+  if (filtered.length === 0) {
+    searchDropdown.innerHTML = `<li class="list-group-item text-center text-muted">No results found</li>`;
+  } else {
+    filtered.forEach(item => {
+      const li = document.createElement("li");
+      li.className = "list-group-item d-flex align-items-center justify-content-between";
+      li.innerHTML = `
+        <div class="d-flex align-items-center">
+          <img src="${item.image}" class="rounded-circle me-2" width="40" height="40" alt="${item.name}">
+          <div>
+            <strong>${item.name}</strong><br>
+            <small class="text-muted">${item.type}</small>
           </div>
-          <a class="atext" href="${item.link}"><span>${item.name}</span></a>
+        </div>
+        <a class="btn btn-sm btn-outline-success rounded-pill" href="${item.link}">View</a>
         `;
 
         searchDropdown.appendChild(li);

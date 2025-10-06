@@ -146,7 +146,7 @@
             ${place.review ? `<p class="fw-semibold">${place.review}</p>` : ""}
             ${place.summary ? `<p class="card-text">${place.summary}</p>` : ""}
             ${place.detail ? `<p class="card-text">${place.detail}</p>` : ""}
-            <a href="./des.html" class="back-btn">← Back to Destinations</a>
+            <a href="./des.html?region=${encodeURIComponent(regionName)}" class="back-btn">← Back to ${regionName}</a>
           </div>
         </div>
       `;
