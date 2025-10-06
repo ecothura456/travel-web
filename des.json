@@ -8,7 +8,7 @@
         "name": "Shwedagon Pagoda",
         "image": "image/Shwedagon Pagoda.jpg",
         "description": "The most sacred Buddhist pagoda in Myanmar.",
-        "detail": "The Shwedagon Pagoda is the shining heart of Yangon and the most sacred Buddhist site in Myanmar.Rising nearly 100 meters above the city on Singuttara Hill, the golden stupa can be seen from almost anywhere in Yangon, glowing beautifully at sunrise, sunset, and under the night lights.According to legend, the pagoda is over <strong>2,500 </strong>years old, enshrining sacred relics of <strong>the Gautama Buddha</strong>, including <strong>eight strands of his hair</strong>.Historical evidence suggests the pagoda was likely built between the <b>6th and 10th centuries AD</b>, and over time, it has been enlarged and renovated by many Burmese kings.The pagoda has survived earthquakes, most notably in <b>1768</b>, after which it was rebuilt to its current height. Generations of monarchs and devotees donated gold, jewels, and precious stones, giving Shwedagon its dazzling brilliance today. The entire structure is covered with real gold plates, and the top is decorated with diamonds, rubies, and other precious gems, making it one of the most breathtaking religious monuments in the world.For centuries, Shwedagon has been a place of devotion, pilgrimage, and celebration.Visitors can walk barefoot around its marble terraces, observe local worshippers lighting candles and incense, and experience the peaceful yet vibrant spiritual atmosphere.<u>A visit to Yangon would not be complete without experiencing the Shwedagon Pagoda — a timeless symbol of Myanmar’s heritage, faith, and beauty.</u></p>"
+        "detail": "<p><b>The Shwedagon Pagoda</b> is the shining heart of Yangon and the most sacred Buddhist site in Myanmar.Rising nearly 100 meters above the city on Singuttara Hill, the golden stupa can be seen from almost anywhere in Yangon, glowing beautifully at sunrise, sunset, and under the night lights.According to legend, the pagoda is over <strong>2,500 </strong>years old, enshrining sacred relics of <strong>the Gautama Buddha</strong>, including <strong>eight strands of his hair</strong>.Historical evidence suggests the pagoda was likely built between the <b>6th and 10th centuries AD</b>, and over time, it has been enlarged and renovated by many Burmese kings.The pagoda has survived earthquakes, most notably in <b>1768</b>, after which it was rebuilt to its current height. Generations of monarchs and devotees donated gold, jewels, and precious stones, giving Shwedagon its dazzling brilliance today. The entire structure is covered with real gold plates, and the top is decorated with diamonds, rubies, and other precious gems, making it one of the most breathtaking religious monuments in the world.For centuries, Shwedagon has been a place of devotion, pilgrimage, and celebration.Visitors can walk barefoot around its marble terraces, observe local worshippers lighting candles and incense, and experience the peaceful yet vibrant spiritual atmosphere.<u>A visit to Yangon would not be complete without experiencing the Shwedagon Pagoda — a timeless symbol of Myanmar’s heritage, faith, and beauty.</u></p>"
       },
       {
         "name": "National Museum of Myanmar",
@@ -171,9 +171,9 @@
     "places": [
       {
         "name": "Inle Lake",
-        "image": "./image/shan/inle.jpg",
+        "image": "image/p-innLay.jpg",
         "description": "Famous for floating gardens and leg-rowing fishermen.",
-        "detail": "<p><b>Inle Lake, situated in the heart of <b>Shan State</b>, is one of Myanmar’s most picturesque and culturally rich destinations. Surrounded by rolling green hills, the lake sits about <b>900 meters above sea level</b> and stretches over <b>22 kilometers</b>, making it a peaceful haven filled with life and tradition. The <b>Intha people</b>, known for their graceful <strong>leg-rowing technique</strong>, live in charming <b>stilt houses</b> built directly over the water. As you glide across the lake by boat, you’ll see <b>floating gardens</b> where locals grow vegetables on layers of water hyacinth and soil — a fascinating sight that shows their deep connection with nature. Around the lake, <b>colorful markets</b> rotate between villages, offering handmade crafts, Shan noodles, and local snacks. Spiritual life flourishes here too, with <b>golden pagodas and monasteries</b> scattered along the shores, such as the <b>Indein Pagoda complex</b>. If you visit between <b>November and February</b>, the weather is cool and the skies are clear — perfect for filming sunrises that paint the water in gold and silver. The highlight of the year is the <b>Phaung Daw Oo Pagoda Festival<b>, where elaborately decorated boats carry sacred Buddha images around the lake, accompanied by music and celebration. From peaceful mornings with mist over the water to lively festivals and warm smiles of the locals, Inle Lake offers a perfect blend of <b>natural beauty, cultural depth, and timeless charm</b> — ideal for a travel vlog full of authenticity and wonder.</p>"
+        "detail": "<p><b>Inle Lake</b>, situated in the heart of <b>Shan State</b>, is one of Myanmar’s most picturesque and culturally rich destinations. Surrounded by rolling green hills, the lake sits about <b>900 meters above sea level</b> and stretches over <b>22 kilometers</b>, making it a peaceful haven filled with life and tradition. The <b>Intha people</b>, known for their graceful <strong>leg-rowing technique</strong>, live in charming <b>stilt houses</b> built directly over the water. As you glide across the lake by boat, you’ll see <b>floating gardens</b> where locals grow vegetables on layers of water hyacinth and soil — a fascinating sight that shows their deep connection with nature. Around the lake, <b>colorful markets</b> rotate between villages, offering handmade crafts, Shan noodles, and local snacks. Spiritual life flourishes here too, with <b>golden pagodas and monasteries</b> scattered along the shores, such as the <b>Indein Pagoda complex</b>. If you visit between <b>November and February</b>, the weather is cool and the skies are clear — perfect for filming sunrises that paint the water in gold and silver. The highlight of the year is the <b>Phaung Daw Oo Pagoda Festival<b>, where elaborately decorated boats carry sacred Buddha images around the lake, accompanied by music and celebration. From peaceful mornings with mist over the water to lively festivals and warm smiles of the locals, Inle Lake offers a perfect blend of <b>natural beauty, cultural depth, and timeless charm</b> — ideal for a travel vlog full of authenticity and wonder.</p>"
       },
       {
         "name": "Phaung Daw Oo Pagoda",
@@ -224,24 +224,54 @@
   },
   {
     "name": "Kayin State",
-    "image": "./image/kayin.jpg",
+    "image": "image/Kayin State.jpg",
     "description": "Known for caves, mountains, and Karen culture.",
     "places": [
       {
         "name": "Mount Zwegabin",
-        "image": "./image/kayin/zwegabin.jpg",
-        "description": "A sacred mountain with a monastery on top."
+        "image": "image/Mount Zwegabin.jpg",
+        "description": "A sacred mountain with a monastery on top.",
+        "detail": ""
       },
       {
+        "name": "Taung Wine Mountain",
+        "image": "image/Taung Wine.jpg",
+        "description": "",
+        "detail": ""
+      },
+      {
+        "name": "Yathaypyan Cave",
+        "image": "image/Yathaypyan Cave.jpg",
+        "description": "",
+        "detail": ""
+      },
+      {
+        "name": "Mahar Sadan Cave",
+        "image": "image/Mahar_Sadan_Cave_jpg.jpg",
+        "description": "",
+        "detail": ""
+
+      },
+      {
+        "name": "Kyauk Ka Lat Pagoda",
+        "image": "image/Kyauk Ka Lat Pagoda.jpg",
+        "description": "",
+        "detail": ""
+        
+
+      },
+    
+      {
         "name": "Kawgun Cave",
-        "image": "./image/kayin/kawgun.jpg",
-        "description": "Cave filled with thousands of Buddha images."
+        "image": "image/Kawgun Cave.jpg",
+        "description": "Cave filled with thousands of Buddha images.",
+        "detail": ""
       }
     ]
   },
   {
     "name": "Mon State",
-    "image": "./image/mon.jpg",
+    "image": "image/Mon State.jpg",
     "description": "Coastal state with ancient culture and golden pagodas.",
     "places": [
       {
@@ -259,7 +289,7 @@
   },
   {
     "name": "Rakhine State",
-    "image": "./image/rakhine.jpg",
+    "image": "image/Rakhine.jpg",
     "description": "Western coastal state with beaches and ancient cities.",
     "places": [
       {
