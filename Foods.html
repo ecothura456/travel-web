@@ -137,7 +137,7 @@
 let regionsData = [];
 
 // Load JSON
-fetch('data.json')
+fetch('foods.json')
   .then(res => res.json())
   .then(data => {
     regionsData = data;
@@ -227,7 +227,7 @@ function showPlaceDetail(regionName, placeName) {
   let destinations = [];
 
   // Load JSON file
-  fetch("data.json")
+  fetch("foods.json")
     .then(response => response.json())
     .then(data => {
       destinations = data;
