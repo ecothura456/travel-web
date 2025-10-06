@@ -82,6 +82,14 @@
       .page-hero{ padding: 70px 0 44px }
       .region-card img, .place-card img{ height: 200px }
     }
+
+    .region-card img {
+      transition: transform 0.4s ease;
+    }
+    .region-card:hover img {
+      transform: scale(1.05);
+    }
+    
   </style>
 </head>
 <body>
@@ -124,75 +132,43 @@
     <h1>Famous Festivals of Myanmar</h1>
   </div>
 </header>
-
 <section class="py-5">
   <div class="container">
-    <div class="soft-divider"></div>
     <div id="content"></div>
   </div>
 </section>
 
 <script>
-let regionsData = [];
+let festivals = [];
 
-// Load JSON
+// Load festival JSON
 fetch('festivals.json')
   .then(res => res.json())
   .then(data => {
-    regionsData = data;
-    showRegions();
+    festivals = data;
+    showFestivalCards();
   });
 
 const content = document.getElementById('content');
 
-// Show all regions
-function showRegions() {
-  content.innerHTML = '<h2 class="section-title">Celebrate Culture, Faith, and Happiness</h2><div class="row g-4" id="regions-container"></div>';
-  const container = document.getElementById('regions-container');
-
-  regionsData.forEach(region => {
-    const col = document.createElement('div');
-    col.className = 'col-md-6 col-lg-4';
-    col.innerHTML = `
-      <div class="card region-card shadow-sm h-100">
-        <img src="${region.image}" class="card-img-top" alt="${region.name}">
-        <div class="card-body d-flex flex-column">
-          <h5 class="card-title">${region.name}</h5>
-          <div class="mt-auto">
-            <span class="btn btn-outline-dark rounded-pill" onclick="showPlaces('${region.name}')">Explore Places</span>
-          </div>
-        </div>
-      </div>
-    `;
-    container.appendChild(col);
-  });
-}
-
-// Show places of a region
-function showPlaces(regionName) {
-  const region = regionsData.find(r => r.name === regionName);
-  if (!region) return;
-
+// Show all festivals as cards
+function showFestivalCards() {
   content.innerHTML = `
-    <div class="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-2">
-      <h2 class="section-title m-0">${region.name}</h2>
-      <span class="btn btn-outline-dark rounded-pill" onclick="showRegions()">Back to all regions</span>
-    </div>
-    <div class="row g-4" id="places-container"></div>
+    <h2 class="section-title mb-4">Famous Festivals of Myanmar</h2>
+    <div class="row g-4" id="festival-container"></div>
   `;
-  const container = document.getElementById('places-container');
+  const container = document.getElementById('festival-container');
 
-  region.places.forEach(place => {
+  festivals.forEach(festival => {
     const col = document.createElement('div');
     col.className = 'col-md-6 col-lg-4';
     col.innerHTML = `
-      <div class="card place-card shadow-sm h-100">
-        <img src="${place.image}" class="card-img-top" alt="${place.name}">
+      <div class="card region-card shadow-sm h-100" onclick="showFestivalDetail('${festival.name}')">
+        <img src="${festival.image}" class="card-img-top" alt="${festival.name}">
         <div class="card-body d-flex flex-column">
-          <h5 class="card-title">${place.name}</h5>
-          <div class="mt-auto">
-            <span class="btn btn-outline-dark rounded-pill" onclick="showPlaceDetail('${regionName}', '${place.name}')">Detail</span>
-          </div>
+          <h5 class="card-title">${festival.name}</h5>
+          <p class="card-text">${festival.description}</p>
+          <button class="btn btn-outline-success mt-auto rounded-pill">Read More</button>
         </div>
       </div>
     `;
@@ -200,82 +176,26 @@ function showPlaces(regionName) {
   });
 }
 
-// Show place detail
-function showPlaceDetail(regionName, placeName) {
-  const region = regionsData.find(r => r.name === regionName);
-  if (!region) return;
-  const place = region.places.find(p => p.name === placeName);
-  if (!place) return;
+// Show festival details
+function showFestivalDetail(festivalName) {
+  const fest = festivals.find(f => f.name === festivalName);
+  if (!fest) return;
 
   content.innerHTML = `
     <div class="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-3">
-      <h2 class="section-title m-0">${place.name}</h2>
-      <span class="btn btn-outline-dark rounded-pill" onclick="showPlaces('${regionName}')">Back to ${regionName}</span>
+      <h2 class="section-title m-0">${fest.name}</h2>
+      <button class="btn btn-outline-dark rounded-pill" onclick="showFestivalCards()">Back to Festivals</button>
     </div>
-    <div class="card mb-4 shadow-sm">
-      <img src="${place.image}" class="card-img-top" alt="${place.name}">
+
+    <div class="card shadow-sm mb-4">
+      <img src="${fest.image}" class="card-img-top" alt="${fest.name}">
       <div class="card-body">
-        <h5 class="card-title">${place.name}</h5>
+        <h4 class="card-title">${fest.name}</h4>
+        <p class="card-text">${fest.details}</p>
       </div>
     </div>
   `;
 }
-</script>
-
-<script>
-  let destinations = [];
-
-  // Load JSON file
-  fetch("destivals.json")
-    .then(response => response.json())
-    .then(data => {
-      destinations = data;
-    })
-    .catch(error => console.error("Error loading JSON:", error));
-
-  const searchInput = document.getElementById("searchInput");
-  const searchDropdown = document.getElementById("searchDropdown");
-
-  searchInput.addEventListener("input", function () {
-    const query = this.value.toLowerCase();
-    searchDropdown.innerHTML = "";
-
-    if (query === "") {
-      searchDropdown.style.display = "none";
-      return;
-    }
-
-    // Filter results
-    const filtered = destinations.filter(item => item.name.toLowerCase().includes(query));
-
-    if (filtered.length === 0) {
-      searchDropdown.innerHTML = `<li class="list-group-item text-center text-muted">No results found</li>`;
-    } else {
-      filtered.forEach(item => {
-        const li = document.createElement("li");
-        li.className = "list-group-item d-flex align-items-center justify-content-between";
-
-        li.innerHTML = `
-          <div class="d-flex align-items-center">
-            <img src="${item.image}" class="rounded-circle me-2" width="40" height="40" alt="${item.name}">
-            
-          </div>
-          <a class="atext" href="${item.link}"><span>${item.name}</span></a>
-        `;
-
-        searchDropdown.appendChild(li);
-      });
-    }
-
-    searchDropdown.style.display = "block";
-  });
-
-  // Hide dropdown when clicking outside
-  document.addEventListener("click", function (e) {
-    if (!searchInput.contains(e.target) && !searchDropdown.contains(e.target)) {
-      searchDropdown.style.display = "none";
-    }
-  });
 </script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
