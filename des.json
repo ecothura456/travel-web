@@ -74,7 +74,7 @@
   },
   {
     "name": "Magway Region",
-    "image": "./image/r-mgw.jpg",
+    "image": "image/Magway.jpg",
     "description": "Known for ancient pagodas and dry central plains.",
     "places": [
       {
@@ -86,13 +86,21 @@
       },
       {
         "name": "Myathalun Pagoda",
-        "image": "./image/magway/myathalun.jpg",
-        "description": "A sacred pagoda on the Irrawaddy River bank."
+        "image": "image/Magwway Myathalun Pagoda.jpg",
+        "description": "A sacred pagoda on the Irrawaddy River bank.",
+        "detail": "<p><b>The Myathalun Pagoda</b>, located in Magway, Myanmar, is a notable religious site and a significant cultural landmark. Perched on the banks of <u>the Irrawaddy River</u>, this revered Buddhist pagoda is renowned for its historical significance and stunning architecture.It was originally built around <b>1300 years ago<b> during the reign of <b>King Saw Lu of Bagan</b> and has since been renovated several times due to earthquake damage. The pagoda enshrines sacred relics of the Buddha and is an important pilgrimage site for locals, especially during <mark>the full moon of Thadingyut</mark>.<u>Visitors to Myathalun Pagoda are often captivated by its serene atmosphere, intricate carvings, and the breathtaking panoramic views of the river and surrounding landscapes.</u></p>"
       },
       {
-        "name": "Minbu Oil Field",
-        "image": "./image/magway/minbu.jpg",
-        "description": "One of the oldest oil fields in Myanmar."
+        "name": "Yokesone Monastery",
+        "image": "image/Yoke Sone Monastery.jpg",
+        "description": "",
+        "detail": "<p>Monasteries with significant masterpieces of <b>wood carvings</b>, illustrating <b>550</b> Jataka stories and Dhammapada verses and stories, are called <b>Yokesone monasteries</b>.There are many ancient Yokesone monasteries in Myanmar. Of them, <u>Mandalay Shweinpin Yokesone Monastery, Sagaing Yokesone Monastery, Salin Yokesone Monastery and Panpu Yokesone Monastery in Salay and Sagu’s three-storey Yokesone Monastery, Hmankin Yokesone Monastery in Minbu (Sagu) Township and Lekaing Monastery located between Sagu and Pwintbyu</u>are the most famous places.Some Yokesone monasteries have been preserved and carefully restored by the Department of Archaeology and National Museum, maintaining the original structure. The visitors can observe intricate wood carvings depicting the tales, and its exterior is adorned with detailed carvings.Yokesone monasteries are cultural hubs and architectural landmarks with symbolism. Monasteries representing cultural fusion of late Konbaung Dynasty, Inwa, Amarapura and Yadanabon eras. Those ancient monasteries are preserved through generations for historical and architectural significance. <u>Those magnificently decorated sculptural monasteries are preserved for future generations to showcase Myanmar’s exquisite artistic heritage to homegrown visitors and tourists.</u></p>"
+      },
+      {
+        "name": "Min Hla Fort",
+        "image": "image/Minhla Fortress.jpg",
+        "description": "A visible symbol that shows Myanmar history",
+        "detail": "<p><b>Min Hla</b> is a small town in central Myanmar, located on the west bank of the <b>Ayeyarwady River</b>. It can be reached by bus or car from Magway City - which is <b>an hour-long </b>. Among the tourist attractions, <b>Min Hla Fort</b> stands as the most well-known one. The site has a rich history of <b>bitterness,  bravery, and invasion by remembering the national soldiers</b> who gave their lives in the <b>Third Anglo-Burmesewar</b>. In <b>1854</b>, British troops were deployed at Thayat, about <b>60 miles</b> south of Min Hla and close to territory that was still held by the Myanmar kingdom. Min Hla Fort is <b>a 150-year old fort</b> on the edge of town. It was built with assistance from <b>two Italian engineers</b>, <mark>Commotto and Molinari</mark> who also helped design some parts for the lookout cannon that still stands at its entranceway today. The <b>35 cannons</b> installed within could fire toward any vessel trying to enter or leave through the river.<b>The tourists are interested in tours like MinHla Fort for discovering Magway region sites with special features like systematic structures, gigantic red brick, etc.</u></p>"
       }
     ]
   },
