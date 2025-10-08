@@ -47,31 +47,31 @@
 <body>
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-gray shadow-sm sticky-top" style="background: rgba(96, 94, 94, 0.7);">
-    <div class="container">
-      <a class="navbar-brand fw-bold text-white" href="./index.html">ASME</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#travelNavbar" aria-controls="travelNavbar" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+ <nav class="navbar navbar-expand-lg navbar-gray shadow-sm sticky-top" style="background: rgba(96, 94, 94, 0.7);">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="./index.html">ASME</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#travelNavbar" aria-controls="travelNavbar" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-      <div class="collapse navbar-collapse" id="travelNavbar">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link active text-white" href="./index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link text-white" href="./des.html">Destinations</a></li>
-          <li class="nav-item"><a class="nav-link text-white" href="./Festivals.html">Festivals</a></li>
-          <li class="nav-item"><a class="nav-link text-white" href="./Foods.html">Foods</a></li>
-        </ul>
+    <div class="collapse navbar-collapse" id="travelNavbar">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="./index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link active" href="./des.html">Destinations</a></li>
+        <li class="nav-item"><a class="nav-link active" href="./Festivals.html">Festivals</a></li>
+        <li class="nav-item"><a class="nav-link active" href="./Foods.html">Foods</a></li>
+      </ul>
 
-        <!-- Search Form -->
-        <form class="d-flex position-relative">
-          <input class="form-control me-2 rounded-pill" type="search" id="searchInput" placeholder="Search destinations...">
-          <!-- Dropdown search results -->
-          <ul id="searchDropdown" class="list-group position-absolute w-100 shadow-sm"
-              style="top:100%; left:0; z-index:1000; display:none;"></ul>
-        </form>
-      </div>
+      <!-- prevent default submit on Enter -->
+      <form class="d-flex position-relative" onsubmit="return false;">
+        <input class="form-control me-2 rounded-pill" type="search" id="searchInput" placeholder="Search destinations...">
+        <!-- Dropdown search results -->
+        <ul id="searchDropdown" class="list-group position-absolute w-100 shadow-sm"
+            style="top:100%; left:0; z-index:1000; display:none;"></ul>
+      </form>
     </div>
-  </nav>
+  </div>
+</nav>
 
   <!-- Hero Section -->
   <section class="hero">
