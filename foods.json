@@ -1,256 +1,35 @@
 [
   {
-    "name": "Yangon Region",
-    "image": "./image/yangon.jpg",
-    "description": "Myanmar’s largest city with colonial architecture and golden pagodas.",
-    "places": [
+    "name": "Traditional Dishes",
+    "description": "Classic Myanmar meals loved by everyone.",
+    "image": "./image/foods/traditional.jpg",
+    "foods": [
       {
-        "name": "Shwedagon Pagoda",
-        "image": "./image/yangon/shwedagon.jpg",
-        "description": "The most sacred Buddhist pagoda in Myanmar."
+        "name": "Mohinga",
+        "image": "./image/foods/mohinga.jpg",
+        "description": "A rice noodle soup with fish broth — Myanmar’s national dish."
       },
       {
-        "name": "Bogyoke Aung San Market",
-        "image": "./image/yangon/market.jpg",
-        "description": "A historic marketplace with handicrafts, gems, and souvenirs."
+        "name": "Shan Noodles",
+        "image": "./image/foods/shan-noodles.jpg",
+        "description": "A beloved dish from Shan State with tomato sauce and meat."
       }
     ]
   },
   {
-    "name": "Mandalay Region",
-    "image": "./image/mandalay.jpg",
-    "description": "Cultural heart of Myanmar with temples and royal history.",
-    "places": [
+    "name": "Street Foods",
+    "description": "Tasty snacks found on every corner of Myanmar.",
+    "image": "./image/foods/streetfood.jpg",
+    "foods": [
       {
-        "name": "Mandalay Palace",
-        "image": "./image/mandalay/palace.jpg",
-        "description": "Historic royal palace of Mandalay."
+        "name": "Samosa Salad",
+        "image": "./image/foods/samosa-salad.jpg",
+        "description": "Crispy samosas chopped and mixed with chickpeas and tamarind sauce."
       },
       {
-        "name": "U Bein Bridge",
-        "image": "./image/mandalay/ubein.jpg",
-        "description": "The world’s longest teakwood bridge."
-      }
-    ]
-  },
-  {
-    "name": "Sagaing Region",
-    "image": "./image/sagaing.jpg",
-    "description": "Famous for Buddhist monasteries and natural landscapes.",
-    "places": [
-      {
-        "name": "Sagaing Hill",
-        "image": "./image/sagaing/hill.jpg",
-        "description": "A hill dotted with pagodas and monasteries."
-      },
-      {
-        "name": "Kaunghmudaw Pagoda",
-        "image": "./image/sagaing/kaunghmudaw.jpg",
-        "description": "A large white-domed pagoda near Sagaing."
-      }
-    ]
-  },
-  {
-    "name": "Magway Region",
-    "image": "./image/magway.jpg",
-    "description": "Known for ancient pagodas and dry central plains.",
-    "places": [
-      {
-        "name": "Myathalun Pagoda",
-        "image": "./image/magway/myathalun.jpg",
-        "description": "A sacred pagoda on the Irrawaddy River bank."
-      },
-      {
-        "name": "Minbu Oil Field",
-        "image": "./image/magway/minbu.jpg",
-        "description": "One of the oldest oil fields in Myanmar."
-      }
-    ]
-  },
-  {
-    "name": "Bago Region",
-    "image": "./image/bago.jpg",
-    "description": "A historic region with golden pagodas.",
-    "places": [
-      {
-        "name": "Shwemawdaw Pagoda",
-        "image": "./image/bago/shwemawdaw.jpg",
-        "description": "The tallest pagoda in Myanmar."
-      },
-      {
-        "name": "Kanbawzathadi Palace",
-        "image": "./image/bago/palace.jpg",
-        "description": "A replica of King Bayinnaung’s 16th-century palace."
-      }
-    ]
-  },
-  {
-    "name": "Ayeyarwady Region",
-    "image": "./image/ayeyarwady.jpg",
-    "description": "Delta region with rivers, farms, and beaches.",
-    "places": [
-      {
-        "name": "Ngwe Saung Beach",
-        "image": "./image/ayeyarwady/ngwesaung.jpg",
-        "description": "A popular white-sand beach on the Bay of Bengal."
-      },
-      {
-        "name": "Pathein Umbrella Workshop",
-        "image": "./image/ayeyarwady/pathein-umbrella.jpg",
-        "description": "Famous for traditional handmade umbrellas."
-      }
-    ]
-  },
-  {
-    "name": "Tanintharyi Region",
-    "image": "./image/tanintharyi.jpg",
-    "description": "Southern coastal region with islands and marine life.",
-    "places": [
-      {
-        "name": "Myeik Archipelago",
-        "image": "./image/tanintharyi/myeik.jpg",
-        "description": "Over 800 pristine islands ideal for diving."
-      },
-      {
-        "name": "Dawei Beaches",
-        "image": "./image/tanintharyi/dawei.jpg",
-        "description": "Quiet, untouched beaches in southern Myanmar."
-      }
-    ]
-  },
-  {
-    "name": "Kachin State",
-    "image": "./image/kachin.jpg",
-    "description": "Mountainous region with rich natural resources.",
-    "places": [
-      {
-        "name": "Myitsone",
-        "image": "./image/kachin/myitsone.jpg",
-        "description": "The confluence of the Mali and N’Mai rivers."
-      },
-      {
-        "name": "Indawgyi Lake",
-        "image": "./image/kachin/indawgyi.jpg",
-        "description": "The largest inland lake in Myanmar."
-      }
-    ]
-  },
-  {
-    "name": "Shan State",
-    "image": "./image/shan.jpg",
-    "description": "Known for mountains, lakes, and ethnic diversity.",
-    "places": [
-      {
-        "name": "Inle Lake",
-        "image": "./image/shan/inle.jpg",
-        "description": "Famous for floating gardens and leg-rowing fishermen."
-      },
-      {
-        "name": "Taunggyi Balloon Festival",
-        "image": "./image/shan/balloon.jpg",
-        "description": "A spectacular hot-air balloon festival."
-      }
-    ]
-  },
-  {
-    "name": "Chin State",
-    "image": "./image/chin.jpg",
-    "description": "Remote and mountainous, home to ethnic Chin people.",
-    "places": [
-      {
-        "name": "Mount Victoria (Nat Ma Taung)",
-        "image": "./image/chin/mountvictoria.jpg",
-        "description": "Highest peak in Chin State, inside Nat Ma Taung National Park."
-      },
-      {
-        "name": "Chin Villages",
-        "image": "./image/chin/villages.jpg",
-        "description": "Known for traditional Chin culture and tattooed women."
-      }
-    ]
-  },
-  {
-    "name": "Kayah State",
-    "image": "./image/kayah.jpg",
-    "description": "Small state with unique ethnic traditions.",
-    "places": [
-      {
-        "name": "Loikaw",
-        "image": "./image/kayah/loikaw.jpg",
-        "description": "Capital of Kayah, famous for Taung Kwe Pagoda."
-      },
-      {
-        "name": "Panpet Village",
-        "image": "./image/kayah/panpet.jpg",
-        "description": "Home of the Kayan ‘long neck’ women."
-      }
-    ]
-  },
-  {
-    "name": "Kayin State",
-    "image": "./image/kayin.jpg",
-    "description": "Known for caves, mountains, and Karen culture.",
-    "places": [
-      {
-        "name": "Mount Zwegabin",
-        "image": "./image/kayin/zwegabin.jpg",
-        "description": "A sacred mountain with a monastery on top."
-      },
-      {
-        "name": "Kawgun Cave",
-        "image": "./image/kayin/kawgun.jpg",
-        "description": "Cave filled with thousands of Buddha images."
-      }
-    ]
-  },
-  {
-    "name": "Mon State",
-    "image": "./image/mon.jpg",
-    "description": "Coastal state with ancient culture and golden pagodas.",
-    "places": [
-      {
-        "name": "Kyaiktiyo Pagoda (Golden Rock)",
-        "image": "./image/mon/goldenrock.jpg",
-        "description": "A gravity-defying golden boulder perched on a cliff."
-      },
-      {
-        "name": "Mawlamyine",
-        "image": "./image/mon/mawlamyine.jpg",
-        "description": "Colonial city with beautiful views of the Thanlwin River."
-      }
-    ]
-  },
-  {
-    "name": "Rakhine State",
-    "image": "./image/rakhine.jpg",
-    "description": "Western coastal state with beaches and ancient cities.",
-    "places": [
-      {
-        "name": "Mrauk U",
-        "image": "./image/rakhine/mrauku.jpg",
-        "description": "An ancient city with hundreds of stone temples."
-      },
-      {
-        "name": "Ngapali Beach",
-        "image": "./image/rakhine/ngapali.jpg",
-        "description": "One of Myanmar’s most beautiful beaches."
-      }
-    ]
-  },
-  {
-    "name": "Naypyidaw Union Territory",
-    "image": "./image/naypyidaw.jpg",
-    "description": "The capital city of Myanmar, built in the 2000s.",
-    "places": [
-      {
-        "name": "Uppatasanti Pagoda",
-        "image": "./image/naypyidaw/uppatasanti.jpg",
-        "description": "A replica of Shwedagon Pagoda."
-      },
-      {
-        "name": "National Museum",
-        "image": "./image/naypyidaw/museum.jpg",
-        "description": "A museum showcasing Myanmar’s history and culture."
+        "name": "Mont Lin Ma Yar",
+        "image": "./image/foods/mont-lin-ma-yar.jpg",
+        "description": "Famous crispy rice flour snacks cooked in round molds."
       }
     ]
   }
