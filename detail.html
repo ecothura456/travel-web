@@ -56,6 +56,7 @@
       width: 100%;
       height: 380px;
       object-fit: cover;
+      background: #f0f0f0;
     }
 
     .card-body {
@@ -84,7 +85,6 @@
     .back-btn:hover {
       text-decoration: underline;
     }
-
   </style>
 </head>
 <body>
@@ -117,43 +117,81 @@
 </section>
 
 <script>
-  // Get query parameters from URL
+  // Normalize helper for robust matching
+  const norm = (s='') =>
+    s.toString()
+     .toLowerCase()
+     .normalize('NFKD')
+     .replace(/[\u0300-\u036f]/g, '')
+     .replace(/[^a-z0-9]+/g, ''); // remove spaces/punct
+
+  // Read and decode query params
   const params = new URLSearchParams(window.location.search);
-  const regionName = params.get("region");
-  const placeName = params.get("place");
+  const regionParam = decodeURIComponent(params.get("region") || "");
+  const placeParam  = decodeURIComponent(params.get("place")  || "");
+
+  const placeTitleEl = document.getElementById("placeTitle");
+  const placeDetailEl = document.getElementById("placeDetail");
 
   fetch("des.json")
     .then(res => res.json())
     .then(data => {
-      const region = data.find(r => r.name === regionName);
+      // Build normalized lookup lists
+      const nRegion = norm(regionParam);
+      const nPlace  = norm(placeParam);
+
+      // Find region (case/spacing tolerant; also allow “Yangon Region”)
+      let region = data.find(r => norm(r.name) === nRegion)
+               || data.find(r => norm(r.name).startsWith(nRegion))
+               || data.find(r => norm(r.name).includes(nRegion));
+
       if (!region) {
-        document.getElementById("placeDetail").innerHTML = "<p>Region not found.</p>";
+        placeTitleEl.textContent = "Region not found";
+        placeDetailEl.innerHTML = `
+          <div class="alert alert-warning">We couldn't find the region "<strong>${regionParam || "(empty)"}"</strong>".</div>
+          <a class="back-btn" href="./des.html">← Back to Destinations</a>
+        `;
         return;
       }
-      const place = region.places.find(p => p.name === placeName);
+
+      // Find place inside region
+      const places = region.places || [];
+      let place = places.find(p => norm(p.name) === nPlace)
+              || places.find(p => norm(p.name).startsWith(nPlace))
+              || places.find(p => norm(p.name).includes(nPlace));
+
       if (!place) {
-        document.getElementById("placeDetail").innerHTML = "<p>Place not found.</p>";
+        placeTitleEl.textContent = "Place not found";
+        placeDetailEl.innerHTML = `
+          <div class="alert alert-warning">We couldn't find the place "<strong>${placeParam || "(empty)"}"</strong>" in <strong>${region.name}</strong>.</div>
+          <a class="back-btn" href="./des.html?region=${encodeURIComponent(region.name)}">← Back to ${region.name}</a>
+        `;
         return;
       }
 
-      document.getElementById("placeTitle").textContent = place.name;
+      // Render
+      placeTitleEl.textContent = place.name;
 
-      document.getElementById("placeDetail").innerHTML = `
+      placeDetailEl.innerHTML = `
         <div class="card">
-          <img src="${place.image}" alt="${place.name}">
+          <img src="${place.image || ''}" alt="${place.name}" onerror="this.style.display='none'">
           <div class="card-body">
             <h3 class="card-title">${place.name}</h3>
-            ${place.review ? `<p class="fw-semibold">${place.review}</p>` : ""}
-            ${place.summary ? `<p class="card-text">${place.summary}</p>` : ""}
-            ${place.detail ? `<p class="card-text">${place.detail}</p>` : ""}
-            <a href="./des.html?region=${encodeURIComponent(regionName)}" class="back-btn">← Back to ${regionName}</a>
+            ${place.review  ? `<p class="fw-semibold mb-2">${place.review}</p>`   : ""}
+            ${place.summary ? `<p class="card-text mb-2">${place.summary}</p>`  : ""}
+            ${place.detail  ? `<p class="card-text mb-0">${place.detail}</p>`   : ""}
+            <a href="./des.html?region=${encodeURIComponent(region.name)}" class="back-btn">← Back to ${region.name}</a>
           </div>
         </div>
       `;
     })
     .catch(err => {
       console.error("Error loading JSON:", err);
-      document.getElementById("placeDetail").innerHTML = "<p>Failed to load details.</p>";
+      placeTitleEl.textContent = "Load error";
+      placeDetailEl.innerHTML = `
+        <div class="alert alert-danger">Failed to load details. Please try again.</div>
+        <a class="back-btn" href="./des.html">← Back to Destinations</a>
+      `;
     });
 </script>
 
