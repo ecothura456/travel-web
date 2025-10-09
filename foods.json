@@ -2,33 +2,44 @@
   {
     "name": "Traditional Dishes",
     "description": "Classic Myanmar meals loved by everyone.",
-    "image": "./image/foods/traditional.jpg",
+    "image": "image/Myanmarmeals.jpg",
     "foods": [
       {
         "name": "Mohinga",
-        "image": "./image/foods/mohinga.jpg",
+        "image": "image/Mohinga.jpg",
         "description": "A rice noodle soup with fish broth — Myanmar’s national dish."
       },
       {
         "name": "Shan Noodles",
-        "image": "./image/foods/shan-noodles.jpg",
+        "image": "image/ရှမ်းခေါက်ဆွဲ.jpg",
         "description": "A beloved dish from Shan State with tomato sauce and meat."
+      },
+      {
+        "name": "Si Hta Min",
+        "image": "image/Si Hta Min (Yellow Sticky Rice).jpg",
+        "description": "A beloved dish from Shan State with tomato sauce and meat."
+
       }
     ]
   },
   {
     "name": "Street Foods",
     "description": "Tasty snacks found on every corner of Myanmar.",
-    "image": "./image/foods/streetfood.jpg",
+    "image": "image/myanmar-sweet-snack.jpg",
     "foods": [
       {
-        "name": "Samosa Salad",
-        "image": "./image/foods/samosa-salad.jpg",
-        "description": "Crispy samosas chopped and mixed with chickpeas and tamarind sauce."
+        "name": "Samusa",
+        "image": "image/samusa.jpg",
+        "description": ""
       },
       {
         "name": "Mont Lin Ma Yar",
-        "image": "./image/foods/mont-lin-ma-yar.jpg",
+        "image": "image/မုန့်လင်မယား.jpg",
+        "description": "Famous crispy rice flour snacks cooked in round molds."
+      },
+      {
+        "name": "Mont Lone Yay Baw",
+        "image": "image/Floating Rice Ball.jpg",
         "description": "Famous crispy rice flour snacks cooked in round molds."
       }
     ]
