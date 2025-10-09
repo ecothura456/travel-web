@@ -79,5 +79,5 @@ transition: color 0.3s ease;
 }
 
 .navbar .nav-link:hover {
-color: #00ffb3; /* bright green hover color */
+color: whitesmoke; /* bright green hover color */
 }
