@@ -11,15 +11,31 @@
   a{ text-decoration:none }
   
 
-  .page-hero{
+  .page-hero {
     position: relative;
     padding: 80px 0 60px;
+    color: #b4acac;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .destinations-hero {
     background:
       radial-gradient(1200px 300px at 50% -80px, rgba(25,135,84,.18), transparent 60%),
       linear-gradient(180deg, rgba(0,0,0,0.35), rgba(0,0,0,0.0)),
-      url('./image/Fo1.jpg') center/cover no-repeat;
-    color:#b4acac;
-    text-align:center;
+      url(image/Destinations.jpg) center/cover no-repeat;
+  color: rgb(240, 234, 234);;
+  text-align:center;
+  }
+  
+  .festivals-hero {
+    background:
+      radial-gradient(1200px 300px at 50% -80px, rgba(25,135,84,.18), transparent 60%),
+      linear-gradient(180deg, rgba(0,0,0,0.35), rgba(0,0,0,0.0)),
+      url(image/Festival.jpg) center/cover no-repeat;
+  color: rgb(240, 234, 234);;
+  text-align:center;
   }
   .page-hero h1{
     font-weight:700; font-size: clamp(1.8rem, 4vw, 2.6rem);
