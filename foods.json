@@ -7,18 +7,37 @@
       {
         "name": "Mohinga",
         "image": "image/Mohinga.jpg",
-        "description": "A rice noodle soup with fish broth — Myanmar’s national dish."
+        "description": "A flavorful rice noodle soup in fish broth with lemongrass and herbs — Myanmar’s beloved national dish."
       },
       {
         "name": "Shan Noodles",
         "image": "image/ရှမ်းခေါက်ဆွဲ.jpg",
-        "description": "A beloved dish from Shan State with tomato sauce and meat."
+        "description": "A popular Shan dish of rice noodles topped with seasoned chicken or pork, tomatoes, and garlic oil — simple yet full of flavor."
       },
       {
         "name": "Si Hta Min",
         "image": "image/Si Hta Min (Yellow Sticky Rice).jpg",
-        "description": "A beloved dish from Shan State with tomato sauce and meat."
-
+        "description": "A traditional Burmese golden sticky rice cooked with turmeric and coconut milk, often served with fried fish or dried shrimp."
+      },
+      {
+        "name": "Burmese Tofu",
+        "image": "image/Burmese Tofu.jpg",
+        "description": "A traditional Shan dish made from chickpea flour — smooth, creamy, and often served warm or fried with tangy sauce."
+      },
+      {
+        "name": "Nan Gyi Thoke",
+        "image": "image/Nan Gyi Thoke.jpg",
+        "description": "A thick rice noodle salad mixed with rich chicken curry, roasted chickpea powder, and flavorful Burmese spices."
+      },
+      {
+        "name": "Ohn No Khao Swè",
+        "image": "image/Ohn No Khao Swè.jpg",
+        "description": "A rich Burmese coconut noodle soup with chicken, egg noodles, and spices — served with lemon, egg, and fish sauce."
+      },
+      {
+        "name": "Burmese Biryani",
+        "image": "image/burmese biryani.jpg",
+        "description": "A fragrant rice dish cooked with spiced chicken, cardamom, and cloves — a Burmese twist on classic biryani with rich flavors."
       }
     ]
   },
