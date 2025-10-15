@@ -180,7 +180,7 @@
             ${place.review  ? `<p class="fw-semibold mb-2">${place.review}</p>`   : ""}
             ${place.summary ? `<p class="card-text mb-2">${place.summary}</p>`  : ""}
             ${place.detail  ? `<p class="card-text mb-0">${place.detail}</p>`   : ""}
-            <a href="./des.html?region=${encodeURIComponent(region.name)}" class="back-btn">← Back to ${region.name}</a>
+            <a href="./des.html?region=${encodeURIComponent(region.name)}" class="btn btn-outline-dark rounded-pill">← Back to ${region.name}</a>
           </div>
         </div>
       `;
@@ -190,7 +190,7 @@
       placeTitleEl.textContent = "Load error";
       placeDetailEl.innerHTML = `
         <div class="alert alert-danger">Failed to load details. Please try again.</div>
-        <a class="back-btn" href="./des.html">← Back to Destinations</a>
+        <a class="btn btn-outline-dark rounded-pill" href="./des.html">← Back to Destinations</a>
       `;
     });
 </script>
