@@ -1,119 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Destinations - Myanmar Travel</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Destinations - Myanmar Travel</title>
 
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet"/>
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet"/>
 
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
-  <link rel="stylesheet" href="./index.css"/>
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+<!-- Your external CSS file -->
+<link rel="stylesheet" href="./index.css"/>
 
-  <style>
-    :root{
-      --brand:#198754;
-      --ink:#1f2937;
-      --muted:#6b7280;
-      --ring:#e5e7eb;
-      --card:#ffffff;
-      --bg:#f7f7fb;
-    }
 
-    html,body{background:var(--bg); color:var(--ink); font-family:'Poppins',sans-serif;}
-    a{ text-decoration:none }
+<style>
+:root{
+  --brand:#198754;
+  --ink:#1f2937;
+  --muted:#6b7280;
+  --ring:#e5e7eb;
+  --card:#ffffff;
+  --bg:#f7f7fb;
+}
 
-    .page-hero{
-      position: relative;
-      padding: 80px 0 60px;
-      background:
-        radial-gradient(1200px 300px at 50% -80px, rgba(25,135,84,.18), transparent 60%),
-        linear-gradient(180deg, rgba(0,0,0,0.35), rgba(0,0,0,0.0)),
-        url('./image/B01.jpg') center/cover no-repeat;
-      color:#b4acac;
-      text-align:center;
-    }
-    .page-hero h1{
-      font-weight:700; font-size: clamp(1.8rem, 4vw, 2.6rem);
-      text-shadow: 0 2px 16px rgba(0,0,0,.35);
-      letter-spacing:.5px;
-    }
+html, body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: 'Poppins', sans-serif;
+}
+  /* Navbar hover effects */
 
-    .section-title{
-      font-weight:700; letter-spacing:.4px; text-align:center; margin-bottom: 1.25rem;
-    }
+/* --- Navbar Custom Style --- */
+/* Modern clean travel-style navbar */
+.navbar ul{
+  list-style-type: none;
+  padding: 0px;
+  margin:0px;
 
-    .region-card, .place-card{
-      border: 1px solid var(--ring);
-      border-radius: 18px;
-      overflow: hidden;
-      background:var(--card);
-      transition: transform .28s ease, box-shadow .28s ease;
-    }
-    .region-card:hover, .place-card:hover{
-      transform: translateY(-6px);
-      box-shadow: 0 18px 40px -18px rgba(0,0,0,.3);
-    }
-    .region-card img, .place-card img{
-      height: 220px;
-      object-fit: cover;
-    }
-    .card-body{ padding: 16px 18px 18px; }
-    .card-title{ font-weight: 700; margin-bottom: .35rem; }
-    .card-text{ color: var(--muted); margin-bottom: .75rem; }
+}
 
-    .soft-divider{
-      height:1px; background: linear-gradient(90deg, transparent, var(--ring), transparent);
-      margin: 1.25rem 0;
-    }
+navbar .nav-link {
+  color:white; /* default color */
+  text-decoration: none;
+  padding:15px;
+  display:block;
+  text-align: center;
+  }
+  
+  .navbar .nav-link:hover {
+  background-color: goldenrod /* bright green hover color */
+  }
 
-    @media (max-width: 575.98px){
-      .page-hero{ padding: 70px 0 44px }
-      .region-card img, .place-card img{ height: 200px }
-    }
-  </style>
+/*.background-title {
+  font-size:200px;
+  font-weight: bold;
+  font-family:'Times New Roman', Times, serif;
+  color:rgb(247, 209, 21);}*/
+
+
+.logo-circle{
+  width:48px;
+  height:48px;
+  border-radius:50%;
+  background-color:#fff;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  overflow:hidden;
+  border:2px solid whitesmoke;
+}
+.logo-circle img{ width:100%; height:100%; object-fit:cover; }
+
+.page-hero{
+  position: relative;
+  padding: 80px 0 60px;
+  text-align:center;
+  background:
+    radial-gradient(1200px 300px at 50% -80px, rgba(25,135,84,.18), transparent 60%),
+    linear-gradient(180deg, rgba(0,0,0,0.35), rgba(0,0,0,0)),
+    url('image/B01.jpg') center/cover no-repeat;
+}
+.page-hero h1{
+  font-weight:700;
+  font-size:clamp(1.8rem, 4vw, 2.6rem);
+  text-shadow: 0 2px 16px rgba(0,0,0,.35);
+}
+
+.section-title{
+  font-weight:700;
+  letter-spacing:.4px;
+  text-align:center;
+  margin-bottom: 1.25rem;
+}
+
+.region-card, .place-card {
+  border: 1px solid var(--ring);
+  border-radius: 18px;
+  overflow: hidden;
+  background: var(--card);
+  transition: transform .28s ease, box-shadow .28s ease;
+}
+.region-card:hover, .place-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px -18px rgba(0,0,0,.3);
+}
+.region-card img, .place-card img { height: 220px; object-fit: cover; }
+.card-body{ padding:16px 18px 18px; }
+.card-title{ font-weight:700; margin-bottom:.35rem; }
+.card-text{ color:var(--muted); margin-bottom:.75rem; }
+
+#searchDropdown{
+  position:absolute;
+  top:100%;
+  left:0;
+  width:100%;
+  max-height:300px;
+  overflow-y:auto;
+  z-index:1000;
+  display:none;
+}
+#searchDropdown li{ cursor:pointer; }
+</style>
 </head>
 <body>
 
- <nav class="navbar navbar-expand-lg navbar-gray shadow-sm sticky-top" style="background: rgba(96, 94, 94, 0.7);">
-  <div class="container">
-    <a class="navbar-brand d-flex align-items-center" href="./index.html">
-      <div class="logo-circle me-2">
-        <img src="./image/nav-logo.png" alt="Myanmar Travel Logo">
+  <nav class="navbar navbar-expand-lg navbar-gray shadow-sm sticky-top" style="background: #fbf8f8">
+    <div class="container">
+      <!-- <a class="navbar-brand fw-bold" href="./index.html">ASME</a> -->
+      <a class="navbar-brand d-flex align-items-center" href="./index.html">
+        <div class="logo-circle me-2">
+          <img src="./image/nav-logo.png" alt="Myanmar Travel Logo">
+        </div>
+        <span class="fw-bold ">MYANMAR TRAVEL</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#travelNavbar" aria-controls="travelNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse" id="travelNavbar">
+        <ul class="navbar-nav ms-auto" >
+          <li class="nav-item"><a class="nav-link active" href="./index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="./des.html">Destinations</a></li>
+          <li class="nav-item"><a class="nav-link active" href="./Festivals.html">Festivals</a></li>
+          <li class="nav-item"><a class="nav-link active" href="./Foods.html">Foods</a></li>
+        </ul>
+  
+        <!-- prevent default submit on Enter -->
+        <form class="d-flex position-relative" onsubmit="return false;">
+          <input class="form-control me-2 rounded-pill" type="search"  id="searchInput"  placeholder="Search here..." autocomplete="off"  onfocus="this.style.border=`2px solid green`" style="border-color: green; padding:5px ; border:2px solid green">
+          <!-- Dropdown search results -->
+          <ul id="searchDropdown" class="list-group position-absolute w-100 shadow-sm"
+              style="top:100%; left:0; z-index:1000; display:none; "></ul>
+        </form>
       </div>
-      <span class="fw-bold ">MYANMAR TRAVEL</span>
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#travelNavbar" aria-controls="travelNavbar" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="travelNavbar">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link active" href="./index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link active" href="./des.html">Destinations</a></li>
-        <li class="nav-item"><a class="nav-link active" href="./Festivals.html">Festivals</a></li>
-        <li class="nav-item"><a class="nav-link active" href="./Foods.html">Foods</a></li>
-      </ul>
-
-      <!-- prevent default submit on Enter -->
-      <form class="d-flex position-relative" onsubmit="return false;">
-        <input class="form-control me-2 rounded-pill" type="search" id="searchInput" placeholder="Search destinations...">
-        <!-- Dropdown search results -->
-        <ul id="searchDropdown" class="list-group position-absolute w-100 shadow-sm"
-            style="top:100%; left:0; z-index:1000; display:none;"></ul>
-      </form>
     </div>
-  </div>
-</nav>
+  </nav>
 
-<header class="page-hero destinations-hero">
+<header class="page-hero">
   <div class="container">
-    <h1>Discover the Beauty of Every Region in Myanmar</h1>
+    <h1 class="two-sentence">Discover the Beauty of Every Region in Myanmar</h1>
   </div>
 </header>
-
 
 <section class="py-5">
   <div class="container">
@@ -123,66 +171,38 @@
 </section>
 
 <script>
-let regionsData = [];
-let destinations = [];
+let regionsData=[];
+let destinations=[];
 const content = document.getElementById("content");
 const searchInput = document.getElementById("searchInput");
 const searchDropdown = document.getElementById("searchDropdown");
 
-// ---- Load destination JSON ----
 fetch("des.json")
-  .then(res => res.json())
-  .then(data => {
+  .then(res=>res.json())
+  .then(data=>{
     regionsData = data;
-
-    // Collect all regions and places for search
-    data.forEach(region => {
-      destinations.push({
-        name: region.name,
-        image: region.image,
-        type: "region",
-        description: region.description,
-      });
-      region.places?.forEach(place => {
-        destinations.push({
-          name: place.name,
-          image: place.image,
-          type: "place",
-          region: region.name,
-          description: place.description,
-        });
-      });
+    data.forEach(region=>{
+      destinations.push({...region, type:'region'});
+      region.places?.forEach(place=> destinations.push({...place, type:'place', region: region.name}));
     });
-
-    // Load content (either all regions or a specific region)
-    const urlParams = new URLSearchParams(window.location.search);
-    const regionFromURL = urlParams.get("region");
-    if (regionFromURL) {
-      const regionExists = regionsData.find(r => r.name === regionFromURL);
-      if (regionExists) showPlaces(regionFromURL);
-      else showRegions();
-    } else showRegions();
+    const regionFromURL = new URLSearchParams(window.location.search).get("region");
+    if(regionFromURL && regionsData.some(r=>r.name===regionFromURL)) showPlaces(regionFromURL);
+    else showRegions();
   })
-  .catch(err => {
-    console.error("Error loading JSON:", err);
-    content.innerHTML = "<p>Failed to load destinations.</p>";
-  });
+  .catch(err=>content.innerHTML="<p>Failed to load destinations.</p>");
 
-// ---- Display all regions ----
-function showRegions() {
-  content.innerHTML = `
-    <h2 class="section-title">Find Your Next Destination</h2>
-    <div class="row g-4" id="regions-container"></div>
-  `;
-  const container = document.getElementById("regions-container");
-  regionsData.forEach(region => {
-    const col = document.createElement("div");
-    col.className = "col-md-6 col-lg-4";
-    col.innerHTML = `
+function showRegions(){
+  content.innerHTML=`<h2 class="section-title">Find Your Next Destination</h2><div class="row g-4" id="regions-container"></div>`;
+  const container=document.getElementById("regions-container");
+  regionsData.forEach(region=>{
+    const col=document.createElement("div");
+    col.className="col-md-6 col-lg-4";
+    col.innerHTML=`
       <div class="card region-card shadow-sm h-100">
         <img src="${region.image}" class="card-img-top" alt="${region.name}">
         <div class="card-body d-flex flex-column">
           <h5 class="card-title">${region.name}</h5>
+          <div class="description">${region.description||"No description available."}
           <div class="mt-auto">
             <span class="btn btn-outline-dark rounded-pill" onclick="showPlaces('${region.name}')">Explore Places</span>
           </div>
@@ -193,28 +213,29 @@ function showRegions() {
   });
 }
 
-// ---- Display places inside a region ----
-function showPlaces(regionName) {
-  const region = regionsData.find(r => r.name === regionName);
-  if (!region) return;
-  content.innerHTML = `
+function showPlaces(regionName){
+  const region = regionsData.find(r=>r.name===regionName);
+  if(!region) return;
+  content.innerHTML=`
     <div class="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-2">
       <h2 class="section-title m-0">${region.name}</h2>
       <span class="btn btn-outline-dark rounded-pill" onclick="showRegions()">Back to all regions</span>
     </div>
     <div class="row g-4" id="places-container"></div>
   `;
-  const container = document.getElementById("places-container");
-  region.places.forEach(place => {
-    const col = document.createElement("div");
-    col.className = "col-md-6 col-lg-4";
-    col.innerHTML = `
+  const container=document.getElementById("places-container");
+  region.places?.forEach(place=>{
+    const col=document.createElement("div");
+    col.className="col-md-6 col-lg-4";
+    col.innerHTML=`
       <div class="card place-card shadow-sm h-100">
         <img src="${place.image}" class="card-img-top" alt="${place.name}">
         <div class="card-body d-flex flex-column">
           <h5 class="card-title">${place.name}</h5>
+          <div class="description">${place.description||"No description available."}
           <div class="mt-auto">
-            <span class="btn btn-outline-dark rounded-pill" onclick="showPlaceDetail('${regionName}', '${place.name}')">Detail</span>
+        <span class="btn btn-outline-dark rounded-pill" onclick="showPlaceDetail('${regionName}','${place.name}')">Detail</span>
+
           </div>
         </div>
       </div>
@@ -223,165 +244,45 @@ function showPlaces(regionName) {
   });
 }
 
-// ---- Redirect to detail page ----
-function showPlaceDetail(regionName, placeName) {
-  if (!regionName || !placeName) {
-    console.error("⚠️ Missing region or place name:", regionName, placeName);
-    alert("Sorry, this place cannot be found.");
-    return;
-  }
-  const encodedRegion = encodeURIComponent(regionName);
-  const encodedPlace = encodeURIComponent(placeName);
-  window.location.href = `detail.html?region=${encodedRegion}&place=${encodedPlace}`;
+function showPlaceDetail(regionName,placeName){
+  window.location.href=`detail.html?region=${encodeURIComponent(regionName)}&place=${encodeURIComponent(placeName)}`;
 }
 
-// ---- Search typing suggestions ----
-searchInput.addEventListener("input", function () {
-  const query = this.value.toLowerCase();
-  searchDropdown.innerHTML = "";
-  if (!query) {
-    searchDropdown.style.display = "none";
-    return;
-  }
+searchInput.addEventListener("input",function(){
+  const q=this.value.trim().toLowerCase();
+  searchDropdown.innerHTML="";
+  if(!q) return searchDropdown.style.display="none";
+  const filtered = destinations.filter(d=>d.name.toLowerCase().includes(q));
+  if(!filtered.length) filtered.push({name:"No results found", type:"none"});
+  filtered.forEach(item=>{
+    const li=document.createElement("li");
+    li.className="list-group-item d-flex align-items-center";
+    li.innerHTML=item.type==="none"?item.name:`
+      <
 
-  const filtered = destinations.filter(item => item.name.toLowerCase().includes(query));
+      <img src="${item.image}" class="rounded-circle me-2" width="40" height="40">
+      <div><span class="badge bg-${item.type==='region'?'primary':'success'} me-2">${item.type==='region'?'State':'Place'}</span>${item.name}<br><small class="text-muted">${item.region||''}</small></div>
+    `;
+    if(item.type!=="none") li.addEventListener("click", ()=> redirectTo(item));
+    searchDropdown.appendChild(li);
+  });
 
-  if (filtered.length === 0) {
-    searchDropdown.innerHTML = `<li class="list-group-item text-center text-muted">No results found</li>`;
-  } else {
-    filtered.forEach(item => {
-      const li = document.createElement("li");
-      li.className = "list-group-item d-flex align-items-center";
-      li.innerHTML = `
-        <img src="${item.image}" class="rounded-circle me-2" width="40" height="40" alt="${item.name}">
-        <div>
-          <span class="badge bg-${item.type === "region" ? "primary" : "success"} me-2">${item.type === "region" ? "State" : "Place"}</span>
-          ${item.name}<br>
-          <small class="text-muted">${item.region || ""}</small>
-        </div>
-      `;
-      li.addEventListener("click", () => redirectTo(item));
-      searchDropdown.appendChild(li);
-    });
-  }
   searchDropdown.style.display = "block";
 });
 
-// ---- helper: normalize for tolerant matching ----
-const norm = (s='') =>
-  s.toString()
-   .toLowerCase()
-   .normalize('NFKD')
-   .replace(/[\u0300-\u036f]/g, '')
-   .replace(/[^a-z0-9]+/g, ''); // remove spaces/punct
-
-// ✅ Press Enter: show region places (same page) or go to place detail
-searchInput.addEventListener("keydown", function (event) {
-  if (event.key !== "Enter") return;
-  event.preventDefault();
-
-  if (!regionsData || !regionsData.length) {
-    alert("Destinations are still loading. Please try again in a moment.");
-    return;
-  }
-
-  const raw = this.value.trim();
-  if (!raw) return;
-  const q = norm(raw);
-
-  // Build lookup lists
-  const regions = regionsData.map(r => ({ name: r.name, _n: norm(r.name) }));
-  const placesFlat = [];
-  for (const r of regionsData) {
-    for (const p of (r.places || [])) {
-      placesFlat.push({ name: p.name, region: r.name, _n: norm(p.name) });
-    }
-  }
-
-  // 1) Exact region (normalized)
-  let hit = regions.find(r => r._n === q);
-  if (hit) {
-    showPlaces(hit.name);
-    searchDropdown.style.display = "none";
-    this.blur();
-    return;
-  }
-
-  // 2) Prefix region (e.g., "yan" → "Yangon" or "Yangon Region")
-  hit = regions.find(r => r._n.startsWith(q));
-  if (hit) {
-    showPlaces(hit.name);
-    searchDropdown.style.display = "none";
-    this.blur();
-    return;
-  }
-
-  // 3) Includes region (looser)
-  hit = regions.find(r => r._n.includes(q));
-  if (hit) {
-    showPlaces(hit.name);
-    searchDropdown.style.display = "none";
-    this.blur();
-    return;
-  }
-
-  // 4) Exact place → go to detail page
-  let phit = placesFlat.find(p => p._n === q);
-  if (phit) {
-    window.location.href = `detail.html?region=${encodeURIComponent(phit.region)}&place=${encodeURIComponent(phit.name)}`;
-    return;
-  }
-
-  // 5) Prefix place
-  phit = placesFlat.find(p => p._n.startsWith(q));
-  if (phit) {
-    window.location.href = `detail.html?region=${encodeURIComponent(phit.region)}&place=${encodeURIComponent(phit.name)}`;
-    return;
-  }
-
-  // 6) Includes place
-  phit = placesFlat.find(p => p._n.includes(q));
-  if (phit) {
-    window.location.href = `detail.html?region=${encodeURIComponent(phit.region)}&place=${encodeURIComponent(phit.name)}`;
-    return;
-  }
-
-  alert("No matching region or place found. Try the full name like “Yangon”.");
-  searchDropdown.style.display = "none";
-  this.blur();
-});
-
-// ---- Redirect from click ----
+// Redirect from search
 function redirectTo(item) {
-  if (item.type === "region") {
-    showPlaces(item.name); // open directly, not new page
-  } else if (item.type === "place") {
-    const regionName = item.region || findParentRegion(item.name);
-    if (!regionName) {
-      console.error("⚠️ Missing region for:", item.name);
-      alert("Region not found for this place!");
-      return;
-    }
-    window.location.href = `detail.html?region=${encodeURIComponent(regionName)}&place=${encodeURIComponent(item.name)}`;
-  } else {
-    alert("Invalid item type!");
-  }
+  if(item.type==='region') showPlaces(item.name);
+  else showPlaceDetail(item.region, item.name);
 }
 
-// ---- Find parent region by place name ----
-function findParentRegion(placeName) {
-  const parent = regionsData.find(r => r.places?.some(p => p.name === placeName));
-  return parent?.name || "";
-}
-
-// ---- Hide search dropdown when clicking outside ----
+// Hide dropdown when clicking outside
 document.addEventListener("click", e => {
-  if (!searchInput.contains(e.target) && !searchDropdown.contains(e.target)) {
-    searchDropdown.style.display = "none";
-  }
+  if(!searchInput.contains(e.target) && !searchDropdown.contains(e.target)) searchDropdown.style.display="none";
 });
 </script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="./search.js"></script>
 </body>
 </html>

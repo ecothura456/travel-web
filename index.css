@@ -10,32 +10,28 @@
   html,body{background:var(--bg); color:var(--ink); font-family:'Poppins',sans-serif;}
   a{ text-decoration:none }
   
-
   .page-hero {
     position: relative;
     padding: 80px 0 60px;
-    color: #b4acac;
     text-align: center;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
   }
+  
   .destinations-hero {
     background:
       radial-gradient(1200px 300px at 50% -80px, rgba(25,135,84,.18), transparent 60%),
       linear-gradient(180deg, rgba(0,0,0,0.35), rgba(0,0,0,0.0)),
-      url(image/Destinations.jpg) center/cover no-repeat;
-  color: rgb(240, 234, 234);;
-  text-align:center;
+      url('./image/Destinations.jpg') center/cover no-repeat;
   }
   
   .festivals-hero {
     background:
       radial-gradient(1200px 300px at 50% -80px, rgba(25,135,84,.18), transparent 60%),
       linear-gradient(180deg, rgba(0,0,0,0.35), rgba(0,0,0,0.0)),
-      url(image/Festival.jpg) center/cover no-repeat;
-  color: rgb(240, 234, 234);;
-  text-align:center;
+      url('../image/Festival.jpg') center/cover no-repeat;
+
   }
   .page-hero h1{
     font-weight:700; font-size: clamp(1.8rem, 4vw, 2.6rem);
@@ -64,17 +60,81 @@
   }
   .card-body{ padding: 16px 18px 18px; }
   .card-title{ font-weight: 700; margin-bottom: .35rem; }
-  .card-text{ color: var(--muted); margin-bottom: .75rem; }
-
-  .detail-btn, .back-btn{
-    cursor: pointer;
-    font-weight: 600;
-    display: inline-flex; align-items:center; gap:6px;
+  
+  .card-text {
+    display: block;               /* makes it behave like <p> */
+    font-size: 1rem;              /* readable size */
+    line-height: 1.6;             /* comfortable spacing */
+    color: #555;                  /* soft dark gray */
+    margin: 0.6em 0 1em;          /* spacing top & bottom */
+    text-align: justify;          /* optional – balanced paragraph look */
+    text-wrap: pretty;            /* modern browser support for nicer wrapping */
   }
-  .detail-btn{ color: var(--brand); }
-  .detail-btn::after{ content: "›"; transform: translateY(-1px); }
-  .back-btn{ color: #374151; }
-  .back-btn::before{ content: "‹"; margin-right: 6px; transform: translateY(-1px); }
+  .region-card .card-text {
+    font-size: 1.05rem;
+    color: #444;
+    font-weight: 400;
+  }
+  
+  .place-card .card-text {
+    font-size: 0.95rem;
+    color: #666;
+  }
+  
+  
+  
+  .region-info .description {
+    font-size: 1.05rem;
+    color: #4b5563;
+  }
+  .btn-explore {
+    border: 2px solid var(--brand);
+    color: var(--brand);
+    background-color: transparent;
+  }
+  
+  .btn-explore:hover {
+    background-color: var(--brand);
+    color: white;
+    transform: translateY(-2px);
+  }
+
+  .detail-btn {
+    color: var(--brand);
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px; /* slightly tighter spacing between text and › */
+    margin-top: 4px; /* closer to description */
+    font-size: 0.95rem; /* smoother font size */
+    transition: all 0.25s ease;
+  }
+  
+  .detail-btn:hover {
+    color: #146c43; /* slightly darker green on hover */
+    transform: translateX(2px); /* subtle movement */
+  }
+  .back-btn {
+    color: #374151;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-weight: 600;
+    margin-top: 4px;
+  }
+  .btn-back {
+    border: 2px solid #374151;
+    color: #374151;
+    background-color: transparent;
+  }
+  
+  .btn-back:hover {
+    background-color: #374151;
+    color: white;
+    transform: translateY(-2px);
+  }
+
+  
 
   .soft-divider{
     height:1px; background: linear-gradient(90deg, transparent, var(--ring), transparent);
@@ -87,16 +147,29 @@
   }
 
   /* Navbar hover effects */
-.navbar .nav-link {
-color: #f8f9fa; /* default color */
-font-weight: 500;
-position: relative;
-transition: color 0.3s ease;
+
+/* --- Navbar Custom Style --- */
+/* Modern clean travel-style navbar */
+.navbar ul{
+  list-style-type: none;
+  padding: 0px;
+  margin:0px;
+
 }
 
-.navbar .nav-link:hover {
-color: whitesmoke; /* bright green hover color */
-}
+navbar .nav-link {
+  color:rgb(147, 111, 111); /* default color */
+  text-decoration: none;
+  padding:15px;
+  display:block;
+  text-align: center;
+  }
+  
+  .navbar .nav-link:hover {
+  background-color: goldenrod /* bright green hover color */
+  }
+
+  
 
 .logo-circle {
   width: 48px;
@@ -115,3 +188,64 @@ color: whitesmoke; /* bright green hover color */
   height: 300%;
   object-fit: cover;
 }
+
+.background-title {
+  font-size:200px;
+  font-weight: bold;
+  font-family:'Times New Roman', Times, serif;
+  color:rgb(247, 209, 21);
+
+  /*color:yellow;*/
+}
+.letter {
+  font-size: 20px;
+  font-family:'Lora', serif;
+  color: #fff6d5;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+  letter-spacing: 1px;
+  margin-top: -10px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+
+.two-sentence {
+  color: #fff6d5;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+  width:100%;
+  padding-top:20px;}
+  
+
+.home-text {
+  font-size: 68px;
+  font-family: 'Pattaya', 'Zawgyi-One', cursive; /* graceful and culturally fitting */
+  color: #fcfbf9; /* golden tone */
+  text-shadow:
+    0 0 10px rgba(255, 215, 0, 0.6),
+    0 0 20px rgba(255, 140, 0, 0.5),
+    2px 2px 6px rgba(0, 0, 0, 0.6);
+  letter-spacing: 2px;
+  font-weight: 600;
+  text-align: center;
+  animation: goldenFade 2s ease-in-out;
+}
+
+@keyframes goldenFade {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+/*rgba(96, 94, 94, 0.7)
+
