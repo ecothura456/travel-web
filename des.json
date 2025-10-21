@@ -376,12 +376,20 @@
       {
         "name": "Loikaw",
         "image": "./image/kayah/loikaw.jpg",
-        "description": "Capital of Kayah, famous for Taung Kwe Pagoda."
+        "description": "Capital of Kayah, famous for Taung Kwe Pagoda.",
+        "detail": "<p><b>Loikaw</b> is the charming capital of <strong>Kayah State</strong> in eastern Myanmar, known for its unique cultural heritage, natural beauty, and peaceful atmosphere. Surrounded by rolling hills, serene lakes, and traditional villages, Loikaw offers a glimpse into the authentic life of Myanmar’s ethnic minorities, especially the <strong>Kayan (Padaung) people</strong>, famous for their distinctive long-neck brass rings. The city’s most iconic landmark is the <strong>Taung Kwe Pagoda</strong>, built on a series of limestone cliffs that overlook the entire town. From the top, visitors can enjoy a panoramic view of Loikaw’s green valleys and golden pagodas, especially breathtaking at sunrise and sunset. Nearby, travelers can explore local markets filled with handmade crafts, taste Kayah sausage — a regional delicacy — and visit peaceful villages where traditional weaving and farming are still practiced. The surrounding countryside also offers attractions like <strong>Htee Se Khar Waterfall</strong> and <strong>Seven Stages Lake</strong>, ideal for nature lovers and photographers. <u>A visit to Loikaw is a journey into Myanmar’s heartland — a place where culture, tradition, and natural beauty exist in perfect harmony, offering travelers an unforgettable and truly authentic experience.</u></p>"
       },
       {
         "name": "Panpet Village",
         "image": "./image/kayah/panpet.jpg",
-        "description": "Home of the Kayan ‘long neck’ women."
+        "description": "Home of the Kayan ‘long neck’ women.",
+        "detail": "<p><b>Panpet Village</b> is one of the most famous traditional villages in <strong>Kayah State</strong>, Myanmar, located about 20 kilometers from <strong>Loikaw</strong>. It is home to the <strong>Kayan (Padaung) people</strong>, best known for the women who wear distinctive brass neck rings — a cultural symbol that has made the village world-renowned. Visiting Panpet offers travelers a rare opportunity to experience authentic Kayan traditions, crafts, and daily life in a peaceful mountain setting. The villagers are skilled artisans, creating beautiful handmade textiles, bamboo crafts, and jewelry, all using traditional methods passed down through generations. Tourists can join guided walks through the village, meet local families, and learn about the meaning and history behind the Kayan’s unique customs. The surrounding area is filled with scenic hills, farms, and forests, perfect for light trekking and cultural photography. Visitors can also enjoy traditional Kayah music, dances, and local cuisine, making the experience even richer. <u>A visit to Panpet Village is more than just sightseeing — it’s an inspiring cultural encounter that connects travelers to the spirit, artistry, and heritage of the Kayan people.</u></p>"
+      },
+      {
+        "name": "Htee Se Khar Waterfall",
+        "image": "./image/kayah/htee se khar waterfall.jpg",
+        "description": "A beautiful natural waterfall near Loikaw, great for picnics and relaxation.",
+        "detail": "<p><b>Htee Se Khar Waterfall</b> is one of the most breathtaking natural attractions in <strong>Kayah State</strong>, Myanmar. Located near <strong>Loikaw</strong>, this magnificent waterfall cascades down from limestone cliffs into a clear blue pool surrounded by lush greenery and rocky landscapes. The sound of rushing water and the cool mist in the air create a refreshing and peaceful atmosphere, perfect for relaxation and nature photography. During the rainy season, the waterfall becomes even more powerful, creating a spectacular sight as it flows through the dense forest. The area around Htee Se Khar is also rich in biodiversity, with colorful butterflies, birds, and tropical plants adding to the beauty of the scene. Local villagers often visit the site for picnics and festivals, making it a lively yet tranquil destination. Visitors can enjoy a short trek through the forest to reach the falls, experiencing the pure natural charm of Kayah’s countryside along the way. <u>A trip to Htee Se Khar Waterfall offers travelers an unforgettable escape into nature — a perfect blend of adventure, serenity, and scenic wonder.</u></p>"
       }
     ]
   },
