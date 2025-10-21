@@ -516,13 +516,25 @@
       {
         "name": "Uppatasanti Pagoda",
         "image": "./image/naypyidaw/uppatasanti.jpg",
-        "description": "A replica of Shwedagon Pagoda."
+        "description": "A replica of Shwedagon Pagoda.",
+        "detail": "<p><b>The Uppatasanti Pagoda</b>, also known as the <strong>Peace Pagoda</strong>, is the most iconic landmark in <strong>Naypyidaw</strong>, the capital of Myanmar. Standing at a height of <strong>99 meters</strong>, it is a magnificent replica of Yangon’s famous <strong>Shwedagon Pagoda</strong> and symbolizes peace and national unity. Completed in <strong>2009</strong>, the pagoda enshrines a sacred relic of the <strong>Buddha’s tooth</strong>, making it a deeply revered site for Buddhist devotees. Surrounded by beautifully landscaped gardens and a peaceful atmosphere, Uppatasanti Pagoda shines brilliantly under the sun and glows beautifully at night. Inside, visitors can see exquisite golden Buddha images, murals depicting the Buddha’s life, and intricate carvings showcasing traditional Myanmar art. The pagoda complex also includes a <strong>Bodhi tree</strong> grown from a seed of the original tree in India, a <strong>museum</strong> of Buddhist artifacts, and a <strong>religious teaching hall</strong>. From the top terrace, travelers can enjoy panoramic views of Naypyidaw and its wide, clean avenues. <u>A visit to the Uppatasanti Pagoda offers peace, beauty, and spiritual inspiration — a must-see destination that reflects the faith and cultural pride of the Myanmar people.</u></p>"
       },
       {
         "name": "National Museum",
         "image": "./image/naypyidaw/museum.jpg",
-        "description": "A museum showcasing Myanmar’s history and culture."
+        "description": "A museum showcasing Myanmar’s history and culture.",
+        "detail": "<p>The <strong>National Museum of Myanmar</strong>, located in <strong>Naypyidaw</strong>, is the country’s premier institution for preserving and showcasing Myanmar’s rich cultural, historical, and artistic heritage. The museum houses a vast collection of artifacts spanning thousands of years, including royal regalia, traditional costumes, ancient sculptures, inscriptions, and religious relics. Visitors can explore exhibits dedicated to Myanmar’s diverse ethnic groups, learning about their customs, crafts, and lifestyles through carefully curated displays. One of the highlights is the <strong>Royal Throne Room</strong>, which features replicas of royal thrones and ceremonial objects from the Konbaung Dynasty. The museum also presents stunning examples of traditional arts such as lacquerware, woodcarving, and pottery, alongside natural history exhibits and ethnographic displays. Guided tours and informative signage provide context and deeper understanding of Myanmar’s complex history, from ancient civilizations to modern times. The museum is surrounded by well-maintained gardens, creating a serene environment for reflection and study. <u>A visit to the National Museum of Myanmar offers travelers an enriching experience, combining education, culture, and a deeper appreciation of the country’s heritage and identity.</u></p>"
+
+      },
+      {
+        "name": "Naypyidaw Zoological Garden",
+        "image": "./image/naypyidaw/naypyidaw zoological garden.jpg",
+        "description": "The largest zoo in Myanmar, home to many native and exotic animals.",
+        "detail": "<p><b>The Naypyidaw Zoological Garden</b> is the largest and most modern zoo in Myanmar, located in the country’s capital city, <strong>Naypyidaw</strong>. Opened in <strong>2008</strong>, it covers an impressive area of about <strong>612 acres</strong> and is home to a wide variety of animals from Myanmar and around the world. Visitors can see more than <strong>1,000 animals</strong>, including rare species such as white tigers, giraffes, zebras, penguins, and elephants. The zoo is beautifully designed with spacious enclosures, natural habitats, and clean walking paths surrounded by lush greenery, making it enjoyable for families and nature lovers alike. One of the main attractions is the <strong>Penguin House</strong>, where visitors can observe penguins in a cool, air-conditioned environment — a unique experience in tropical Myanmar. There is also an <strong>aquarium</strong> and a <strong>reptile house</strong>, offering an educational insight into the country’s diverse wildlife. The zoo focuses on wildlife conservation and environmental education, making it both fun and meaningful. <u>A visit to the Naypyidaw Zoological Garden is a refreshing and educational experience, perfect for travelers seeking to enjoy nature, learn about animals, and explore one of Myanmar’s most family-friendly attractions.</u></p>"
       }
+        
+      
+
     ]
   }
 ]
