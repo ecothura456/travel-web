@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Festival Detail - Myanmar Travel</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet"/>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./index.css"/>
+
+  <style>
+    body {
+      background: #f7f7fb;
+      color: #1f2937;
+      font-family: 'Poppins', sans-serif;
+    }
+    .page-hero {
+      position: relative;
+      padding: 80px 0 60px;
+      background:
+        radial-gradient(1200px 300px at 50% -80px, rgba(25,135,84,.18), transparent 60%),
+        linear-gradient(180deg, rgba(0,0,0,0.35), rgba(0,0,0,0.0)),
+        url('image/Festival.jpg') center/cover no-repeat;
+      text-align:center;
+      color: white;
+      text-shadow: 0 2px 16px rgba(0,0,0,.35);
+    }
+    .card img {
+      height: 400px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+
+<!-- ✅ Navbar -->
+<nav class="navbar navbar-expand-lg navbar-gray shadow-sm sticky-top" style="background: #FFFFFF">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="./index.html">
+      <div class="logo-circle me-2">
+        <img src="./image/nav-logo.png" alt="Myanmar Travel Logo" style="height:40px;">
+      </div>
+      <span class="fw-bold">MYANMAR TRAVEL</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#travelNavbar" aria-controls="travelNavbar" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="travelNavbar">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="./des.html">Destinations</a></li>
+        <li class="nav-item"><a class="nav-link" href="./Festivals.html">Festivals</a></li>
+        <li class="nav-item"><a class="nav-link" href="./Foods.html">Foods</a></li>
+      </ul>
+
+      <form class="d-flex position-relative" onsubmit="return false;">
+        <input class="form-control me-2 rounded-pill" type="search" id="searchInput"
+               placeholder="Search here..." autocomplete="off"
+               style="border-color: green; padding:5px; border:2px solid green">
+        <ul id="searchDropdown" class="list-group position-absolute w-100 shadow-sm"
+            style="top:100%; left:0; z-index:1000; display:none;"></ul>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<!-- ✅ Hero -->
+<header class="page-hero">
+  <div class="container">
+    <h1 id="festival-title">Festival Detail</h1>
+  </div>
+</header>
+
+<!-- ✅ Detail section -->
+<section class="py-5">
+  <div class="container">
+    <div id="festival-content"></div>
+  </div>
+</section>
+
+<script>
+const params = new URLSearchParams(window.location.search);
+const festivalName = params.get("festival");
+const content = document.getElementById("festival-content");
+const title = document.getElementById("festival-title");
+
+if (!festivalName) {
+  content.innerHTML = "<p class='text-center text-muted'>No festival selected.</p>";
+} else {
+  fetch("festivals.json")
+    .then(res => res.json())
+    .then(data => {
+      const festival = data.find(f => f.name === festivalName);
+      if (!festival) {
+        content.innerHTML = "<p class='text-center text-muted'>Festival not found.</p>";
+        return;
+      }
+
+      title.textContent = festival.name;
+      content.innerHTML = `
+        <div class="card shadow-sm">
+          <img src="${festival.image}" class="card-img-top" alt="${festival.name}">
+          <div class="card-body">
+            <h3 class="card-title">${festival.name}</h3>
+            <p class="card-text">${festival.details}</p>
+            <a href="Festivals.html" class="btn btn-outline-success rounded-pill mt-3">← Back to Festivals</a>
+          </div>
+        </div>
+      `;
+    })
+    .catch(() => {
+      content.innerHTML = "<p class='text-center text-muted'>Error loading festival data.</p>";
+    });
+}
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="search.js"></script>
+</body>
+</html>

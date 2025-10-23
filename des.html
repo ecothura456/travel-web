@@ -40,7 +40,7 @@ html, body {
 
 }
 
-navbar .nav-link {
+.navbar .nav-link {
   color:white; /* default color */
   text-decoration: none;
   padding:15px;
@@ -247,34 +247,72 @@ function showPlaces(regionName){
 function showPlaceDetail(regionName,placeName){
   window.location.href=`detail.html?region=${encodeURIComponent(regionName)}&place=${encodeURIComponent(placeName)}`;
 }
+// --- SEARCH FUNCTIONALITY ---
+searchInput.addEventListener("input", function () {
+  const q = this.value.trim().toLowerCase();
+  searchDropdown.innerHTML = "";
+  if (!q) return (searchDropdown.style.display = "none");
 
-searchInput.addEventListener("input",function(){
-  const q=this.value.trim().toLowerCase();
-  searchDropdown.innerHTML="";
-  if(!q) return searchDropdown.style.display="none";
-  const filtered = destinations.filter(d=>d.name.toLowerCase().includes(q));
-  if(!filtered.length) filtered.push({name:"No results found", type:"none"});
-  filtered.forEach(item=>{
-    const li=document.createElement("li");
-    li.className="list-group-item d-flex align-items-center";
-    li.innerHTML=item.type==="none"?item.name:`
-      <
+  const filtered = destinations.filter(d => d.name.toLowerCase().includes(q));
+  if (!filtered.length) filtered.push({ name: "No results found", type: "none" });
 
-      <img src="${item.image}" class="rounded-circle me-2" width="40" height="40">
-      <div><span class="badge bg-${item.type==='region'?'primary':'success'} me-2">${item.type==='region'?'State':'Place'}</span>${item.name}<br><small class="text-muted">${item.region||''}</small></div>
-    `;
-    if(item.type!=="none") li.addEventListener("click", ()=> redirectTo(item));
+  filtered.forEach(item => {
+    const li = document.createElement("li");
+    li.className = "list-group-item d-flex align-items-center";
+    li.innerHTML =
+      item.type === "none"
+        ? item.name
+        : `
+        <img src="${item.image}" class="rounded-circle me-2" width="40" height="40" alt="${item.name}">
+        <div>
+          <span class="badge bg-${item.type === "region" ? "primary" : "success"} me-2">
+            ${item.type === "region" ? "State" : "Place"}
+          </span>
+          ${item.name}<br>
+          <small class="text-muted">${item.region || ""}</small>
+        </div>
+      `;
+    if (item.type !== "none") li.addEventListener("click", () => redirectTo(item));
     searchDropdown.appendChild(li);
   });
 
   searchDropdown.style.display = "block";
 });
 
-// Redirect from search
+// --- PRESS ENTER TO SEARCH ---
+searchInput.addEventListener("keydown", function (event) {
+  if (event.key === "Enter") {
+    event.preventDefault(); // stop form submission
+    const query = this.value.trim().toLowerCase();
+    if (!query) return;
+
+    // Find the best matching destination or place
+    const match =
+      destinations.find(d => d.name.toLowerCase() === query) ||
+      destinations.find(d => d.name.toLowerCase().includes(query));
+
+    if (match) {
+      redirectTo(match);
+    } else {
+      alert("No matching destination found!");
+      searchDropdown.style.display = "none";
+    }
+  }
+});
+
+// --- REDIRECT FUNCTION ---
 function redirectTo(item) {
-  if(item.type==='region') showPlaces(item.name);
-  else showPlaceDetail(item.region, item.name);
+  if (item.type === "region") {
+    showPlaces(item.name);
+  } else if (item.type === "place") {
+    showPlaceDetail(item.region, item.name);
+  }
 }
+
+
+
+
+
 
 // Hide dropdown when clicking outside
 document.addEventListener("click", e => {
@@ -283,6 +321,7 @@ document.addEventListener("click", e => {
 </script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-<script src="./search.js"></script>
+<script src="search.js"></script>
+
 </body>
 </html>
