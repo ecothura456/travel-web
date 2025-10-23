@@ -67,10 +67,16 @@
         "description": "Delicious marinated pork skewers, grilled to perfection over charcoal."
       },
       {
-        "name": "Dosa",
+        "name": "Myanmar Dosa Style",
         "image": "image/Lang tha ye.jpg",
         "description": "Thin crispy pancake, often served with chutney or curry."
-       }
+       },
+       {
+        "name": "Myanmar Tempura",
+        "image": "image/အကြော်စုံ.jpg",
+        "description": "Crispy fried vegetables and seafood, a favorite street snack in Myanmar."
+      }
+    
     
     
     ]

@@ -1,22 +1,24 @@
 [
   {
-    "name": "Thingyan Water Festival",
-    "image": "./image/bagan.jpg",
-    "description": "The most famous water festival celebrated in April marking the Myanmar New Year.",
-    "details": "Thingyan, also known as the Myanmar Water Festival, marks the traditional Burmese New Year and is one of the most celebrated festivals in Myanmar. It lasts for several days in April, where people splash water on each other to wash away the sins of the past year and welcome a new beginning."
+    "name": "Thingyan Festival",
+    "image": "image/Thingyan.jpg",
+    "description": "Myanmar’s traditional New Year water festival, celebrated nationwide with music, dancing, and water-splashing.",
+    "details": "<p><b>Thingyan Festival</b> is Myanmar’s vibrant and joyous celebration of the traditional New Year, held every April. It is one of the most iconic festivals in the country, marking a time to wash away the past year’s misfortunes and welcome a fresh start. The festival lasts for several days and is celebrated nationwide, with each region adding its unique local flavor to the festivities.</p><p>During Thingyan, <b>streets are filled with music, parades, and colorful performances</b>. People of all ages participate in playful<b>water-splashing ceremonies</b> using buckets, hoses, and water guns, symbolizing purification and good fortune. Traditional dances and songs are performed, and locals often set up <b>temporary stages and water stations</b> to engage visitors in the fun.</p><p>Thingyan is also a time for <b>cultural and religious rituals</b>. Families visit monasteries to offer <b>alms to monks</b> and perform merit-making activities. Many people take the opportunity to <b>reconnect with family and friends</b>, enjoy local delicacies like mohinga and mont lone yay baw, and participate in traditional ceremonies that have been passed down for generations.</p><p>For travelers, Thingyan offers a unique chance to <b>immerse themselves in Myanmar’s rich cultural heritage</b>. Visitors can witness colorful parades, taste festive foods, and join the spirited water fights while respecting local customs. It is a time of <b>joy, unity, and celebration</b>, making Thingyan Festival an unforgettable experience for anyone exploring Myanmar.</p>"
   },
   {
-    "name": "Thadingyut Festival of Lights",
-    "image": "./image/festival/thadingyut.jpg",
+    "name": "Thadingyut Festival",
+    "image": "image/သီတင်းကျွတ်.jpg",
     "description": "A festival celebrating the Buddha's descent from heaven with thousands of lights.",
-    "details": "Thadingyut, the Festival of Lights, is held at the end of Buddhist Lent (October). Homes, pagodas, and streets are decorated with colorful lights and candles to welcome Buddha's descent from heaven after preaching to his mother."
+    "detail": "<p><b>Thadingyut Festival</b>, also known as the Festival of Lights, is one of Myanmar’s most beautiful and culturally significant celebrations, held at the end of Buddhist Lent in October. This festival commemorates the Buddha's descent from the celestial realm after preaching to his mother, and it is marked by elaborate lighting displays, reverence, and community gatherings.</p><p>During Thadingyut, <b>homes, pagodas, streets, and public spaces are adorned with colorful lights, candles, and illuminated decorations</b>, creating a magical nighttime spectacle throughout the country. Families and communities come together to pay respect to elders, teachers, and monks, often presenting gifts and offerings as a sign of gratitude and merit-making.</p><p>The festival is also a time of <b>joyful gatherings and traditional performances</b>. Many towns host cultural shows, music, and dance events, allowing both locals and visitors to experience Myanmar’s rich heritage. Delicious seasonal foods and sweets are shared among friends and family, adding to the festive spirit.</p><p>For travelers, Thadingyut Festival offers a unique opportunity to witness Myanmar’s traditions in full bloom — from glowing streets to heartfelt ceremonies, it is a celebration of light, respect, and community unity, making it an unforgettable experience for anyone exploring the country.</p>"
   },
+  
   {
     "name": "Tazaungdaing Festival",
     "image": "./image/festival/tazaungdaing.jpg",
     "description": "A celebration with hot air balloons and offerings to monks.",
-    "details": "Tazaungdaing marks the end of the rainy season and is celebrated with stunning hot-air balloon festivals, especially in Taunggyi. People also offer robes and alms to monks during this time, showing generosity and unity."
-  },
+    "detail": "<p><b>Tazaungdaing Festival</b> is a vibrant and visually spectacular celebration held at the end of the rainy season, usually in November. It is a festival that combines religious merit-making with joyous community gatherings, marking the conclusion of the Buddhist Lent period. The festival is particularly famous in Taunggyi, Shan State, where colorful and massive hot-air balloons are launched into the sky, drawing crowds from all over Myanmar.</p><p>During Tazaungdaing, <b>people participate in religious ceremonies</b> such as offering robes, food, and alms to monks, which symbolizes generosity, gratitude, and spiritual merit. The streets and pagodas are decorated with bright lights and intricate lanterns, creating a festive atmosphere. Traditional performances, folk dances, and music accompany the festivities, highlighting Myanmar’s rich cultural heritage.</p><p>The highlight of the festival is the <b>hot-air balloon competitions</b>, where intricately designed balloons soar into the sky, sometimes carrying fireworks, creating a breathtaking spectacle. Families and visitors gather to watch, celebrate, and enjoy local foods and treats.</p><p>For travelers, Tazaungdaing Festival offers a unique glimpse into Myanmar’s religious devotion, community spirit, and love for celebration. It is a time of joy, unity, and cultural immersion, making it an unforgettable experience for anyone visiting the country during this festive season.</p>"
+  }
+  ,
   {
     "name": "Kachin Manaw Festival",
     "image": "./image/festival/manaw.jpg",
