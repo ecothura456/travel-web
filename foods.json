@@ -49,7 +49,7 @@
       {
         "name": "Samusa",
         "image": "image/samusa.jpg",
-        "description": ""
+        "description": "Crispy pastry filled with spiced vegetables or meat, a popular snack in Myanmar."
       },
       {
         "name": "Mont Lin Ma Yar",
@@ -60,7 +60,19 @@
         "name": "Mont Lone Yay Baw",
         "image": "image/Floating Rice Ball.jpg",
         "description": "Famous crispy rice flour snacks cooked in round molds."
-      }
+      },
+      {
+        "name": "Pork Sticks",
+        "image": "image/pork stick.jpg",
+        "description": "Delicious marinated pork skewers, grilled to perfection over charcoal."
+      },
+      {
+        "name": "Dosa",
+        "image": "image/Lang tha ye.jpg",
+        "description": "Thin crispy pancake, often served with chutney or curry."
+       }
+    
+    
     ]
   }
 ]
