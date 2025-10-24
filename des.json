@@ -51,42 +51,42 @@
     "places": [
       {
         "name": "Mandalay Palace",
-        "image": "./image/mandalay/palace.jpg",
+        "image": "image/p-mandalay palace.jpg",
         "description": "Historic royal palace of Mandalay.",
         "region": "Mandalay Region",
         "detail": "<p><b>The Mandalay Palace</b> is the majestic heart of Mandalay and the last royal palace of the Burmese monarchy. Surrounded by high red walls and a broad, reflective moat, the palace stands at the center of the city as a powerful symbol of Myanmar’s royal heritage. Commissioned by <strong>King Mindon</strong> and built between <strong>1857 and 1859</strong>, the complex was designed to serve as the political and spiritual center of the new royal capital. The palace ensemble features elegant wooden halls, tiered roofs, and intricate wood carvings that showcase the finest examples of traditional Burmese architecture. At the core of the compound lies the <strong>Lion Throne Hall</strong>, where the king once held court and performed important ceremonies; nearby, the palace museum displays royal costumes, jewelry, weapons, and ceremonial objects thatreveal the opulence of the royal court. Visitors can climb the <strong>Nan Myint Tower</strong> to enjoy sweeping panoramic views of Mandalay city, Mandalay Hill, and the <strong>Irrawaddy River</strong>, a sight especially beautiful at sunset when golden light plays across the moat and spires. Corner <b>watchtowers</b>, peaceful courtyards, and shaded gardens add to the historic atmosphere, while the red walls and reflections in the water create striking scenes for photography. Although much of the original wooden palace was destroyed during <b>World War II</b>, the site has been carefully reconstructed and conserved, preserving its cultural importance and architectural grandeur. Generations of kings, caretakers, and local communities have contributed to its restoration, making the palacea living emblem of Myanmar’s resilience and royal legacy. For centuries, the palace complex has been a place of ceremony, memory, and daily life for Mandalay’s people; visitors can wander barefooted paths, observe local rituals, and sense the peaceful dignity of the Royal City. <u>A visit to Mandalay Palace is essential for anyone who wishes to understand Myanmar’s royal past, cultural beauty, and timeless spirit.</u></p>"
       },
       {
         "name": "U Bein Bridge",
-        "image": "./image/mandalay/ubein.jpg",
+        "image": "image/p-u beine bridge.jpg",
         "description": "The world’s longest teakwood bridge.",
         "region": "Mandalay Region",
         "detail": "<p><b>U Bein Bridge</b>is the timeless wooden crossing of Amarapura and one of Myanmar’s most photographed landmarks. Stretching for about <strong>1.2 kilometers</strong> across Taungthaman Lake, this long teak footbridge was built around the <strong>1850s</strong> by <strong>U Bein</strong>, a former mayor who used reclaimed teak from the old royal palace to construct the walkway. The bridge’s weathered teak pillars and gently swaying planks create a simple, poetic beauty that changes with the light: misty and quiet at dawn, busy with local life by day, and golden and reflective at sunset. Boats and fishermen drift beneath its arches, while monks, villagers, and visitors cross slowly, pausing to admire the view or take photographs. For generations, U Bein Bridge has been a place of daily ritual, commerce, and quiet contemplation, its long silhouette mirrored in the calm lake waters. Although the bridge is fragile and requires constant maintenance, its humblematerials and enduring presence make it a powerful symbol of Myanmar’s living history. <u>A visit to U Bein Bridge, especially at sunrise or sunset, is an unforgettable experience that captures the gentle rhythm and timeless charm of life by the water.</u></p>"
       },
       {
         "name": " Mahamyatmuni Pagoda",
-        "image": "./image/mandalay/mahamyatmuni.jpg",
+        "image": "image/p-Mahamyatmuni Pagoda.jpg",
         "description": "The Mahamyatmuni Pagoda is a famous golden Buddha temple in Mandalay.",
         "region": "Mandalay Region",
         "detail": "<p><b>The Mahamyatmuni Pagoda,</b> also known as the <strong>Mahamyatmuni Buddha Temple</strong>, is one of the most sacred Buddhist pilgrimage sites in Myanmar. Located in the southern part of <strong>Mandalay</strong>, it houses the highly revered <strong>Mahamyatmuni Buddha Image</strong>, believed to be one of only five likenesses of the Buddha made during his lifetime. According to legend, the Buddha himself visited the Dhanyawadi Kingdom (in present-day Rakhine State) and blessed this image, making it an object of deep veneration for centuries. The statue, cast in bronze and standing about <strong>4 meters high</strong>, is completely covered with layers of gold leaf applied daily by male devotees as an act of worship. Over time, this has given the image a thick, uneven surface that gleams brilliantly under temple lights. The temple complex itself is grand and vibrant, with richly decorated roofs, carved wooden doors, and colorful tiled floors that reflect traditional Burmese artistry. Every morning at dawn, a sacred <strong>face-washing ceremony</strong> is performed by monks, drawing both locals and visitors who gather to witness this intimate act of devotion. Surrounding the main shrine are prayer halls, museums, and workshops where craftsmen produce bronze and marble Buddha images using ancient techniques. Pilgrims from across the country come to pay homage, meditate, and make offerings, filling the pagoda with chants, incense, and peaceful energy. <u>A visit to the Mahamyatmuni Pagoda offers travelers a profound spiritual experience and a glimpse into Myanmar’s living Buddhist traditions and deep cultural faith.</u></p>"
       },
       {
         "name": "Kuthodaw Pagoda",
-        "image": "./image/mandalay/kuthodaw.jpg",
+        "image": "image/p-Kuthodaw Pagoda.jpg",
         "description": "Kuthodaw Pagoda is a famous as the world’s largest book. ",
         "region": "Mandalay Region",
         "detail": "<p><b>Kuthodaw Pagoda,</b>often called <strong>‘The World’s Largest Book’</strong>, is one of the most remarkable and spiritually significant sites in Mandalay, Myanmar. Located at the foot of <strong>Mandalay Hill</strong>, the pagoda complex was built in <strong>1857</strong> by <strong>King Mindon</strong>, the same monarch who founded Mandalay as the royal capital. The central golden stupa, modeled after the Shwezigon Pagoda in Bagan, rises gracefully amid hundreds of smaller white shrines. What makes Kuthodaw truly unique are the <strong>729 marble slabs</strong> inscribed with the entire <strong>Tipitaka</strong>—the Buddhist scriptures—each protected within its own small pagoda. Together, these inscriptions form what is known as the largest book in the world, a monumental achievement of devotion, scholarship, and craftsmanship. The serene white stupas lined in perfect symmetry create a breathtaking view, especially in the soft light of early morning or sunset. Monks and visitors walk quietly among them, reading inscriptions and offering prayers in an atmosphere of deep peace. The site reflects King Mindon’s vision of preserving Buddhist teachings for future generations and promoting wisdom and faith among his people. Nearby, Mandalay Hill rises in the background, enhancing the spiritual beauty of the setting. <u>A visit to Kuthodaw Pagoda is not only a journey through history and art but also an inspiring reminder of Myanmar’s enduring devotion to learning, religion, and cultural heritage.</u></p>"
       },
       {
         "name": "Mandalay Hill",
-        "image": "./image/mandalay/mandalay hill.jpg",
+        "image": "image/p-mandalay hill.jpg",
         "description": "Mandalay Hill offers a panoramic view of Mandalay and is famous for its sunset and temples.",
         "region": "Mandalay Region",
         "detail": "<p><b>Mandalay Hill</b> is one of the most iconic landmarks in Myanmar and a sacred place that offers breathtaking panoramic views of Mandalay city, the Irrawaddy River, and the surrounding plains. Rising about <strong>240 meters</strong> above the city, the hill has been a major pilgrimage site for centuries. According to legend, the Buddha once visited this very spot and prophesied that a great city of Buddhism would one day flourish at its foot — a prophecy fulfilled when <strong>King Mindon</strong> founded Mandalay in 1857. The hill is dotted with <strong>pagodas, temples, and monasteries</strong> along its slopes, connected by long covered stairways lined with shrines and small shops. Among the most famous sites are the <strong>Sutaungpyei Pagoda</strong> at the summit, meaning “wish-fulfilling pagoda,” and the <strong>Kyauk Taw Gyi Pagoda</strong> near the base, which houses a massive marble Buddha image. Pilgrims and visitors often climb the hill barefoot, passing golden Buddha statues and smiling locals along the way. At sunset, the view from the top is truly unforgettable — the city, the golden spires, and the river glow with soft light as the sun sinks behind the distant hills. The peaceful sound of bells and evening prayers fills the air, creating a moment of calm reflection. <u>A visit to Mandalay Hill is both a spiritual journey and a chance to see the heart of Myanmar’s cultural and natural beauty from above — an experience not to be missed.</u></p>"
       },
       {
         "name": "Bagan",
-        "image": "./image/mandalay/bagan.jpg",
+        "image": "image/p-bagan.jpg",
         "description": "Bagan is an ancient city in Myanmar famous for thousands of Buddhist temples and pagodas spread across its plains.",
         "region": "Mandalay Region",
         "detail": "<p><b>Bagan</b> is one of Myanmar’s most famous and historically significant destinations, renowned for its vast and breathtaking temple plains. Located in the <strong>Mandalay Region</strong> along the Ayeyarwady River, Bagan was the capital of the Pagan Kingdom from the 9th to 13th centuries and remains a symbol of Myanmar’s rich cultural and religious heritage. The area is home to over <strong>2,200 ancient temples, pagodas, and stupas</strong>, many built with intricate brickwork and adorned with exquisite frescoes, carvings, and statues of the Buddha. Among the most famous sites are <strong>Ananda Temple</strong>, known for its stunning architecture and golden Buddha images, and <strong>Dhammayangyi Temple</strong>, the largest temple in Bagan with mysterious unfinished corridors. Visitors can explore the temple complex by bike, horse cart, or hot air balloon, offering spectacular views of the sunrise or sunset over the plains dotted with spires and greenery. The region also features local markets, craft villages, and opportunities to witness traditional lacquerware and pottery-making. Bagan’s combination of history, spirituality, and natural beauty provides an unforgettable experience for travelers. <u>A visit to Bagan is like stepping back in time — a journey through Myanmar’s golden age of architecture, devotion, and cultural brilliance that leaves a lasting impression on every visitor.</u></p>"
@@ -100,21 +100,21 @@
     "places": [
       {
         "name": "Sagaing Hill",
-        "image": "./image/sagaing/hill.jpg",
+        "image": "image/p-Sagaing Hill.jpg",
         "description": "A hill dotted with pagodas and monasteries.",
         "region": "Sagaing Region",
         "detail": "<p><b>Sagaing Hill</b>is one of the most sacred and peaceful spiritual centers in Myanmar, often called the <strong>heart of Buddhist devotion</strong> in the country. Located on the western bank of the <strong>Irrawaddy River</strong>, just across from Mandalay, Sagaing Hill rises gracefully with hundreds of white and golden pagodas scattered across its slopes. The hill became a center of meditation and monastic life after the fall of the Ava Kingdom in the 14th century, and it remains home to over <strong>600 monasteries and nunneries</strong> today. The serene hills are filled with chanting monks, quiet temples, and panoramic views that stretch over the river and surrounding plains. Among the most notable sites are <strong>Soon U Ponya Shin Pagoda</strong>, one of the oldest and most revered temples on the hill, and <strong>U Min Thonze Pagoda</strong>, famous for its crescent-shaped colonnade housing <strong>45 Buddha images</strong>. Visitors can climb winding stairways shaded by trees, passing shrines and resting spots along the way. The gentle sound of bells, birds, and prayers fills the air, creating a deeply calming atmosphere perfect for reflection. At sunset, the entire hill glows golden as the light reflects off countless stupas and the river below. <u>A visit to Sagaing Hill offers not only breathtaking scenery but also a profound sense of peace and spiritual renewal, making it one of the most meaningful destinations in Myanmar.</u></p>"
       },
       {
         "name": "Kaunghmudaw Pagoda",
-        "image": "./image/sagaing/kaunghmudaw.jpg",
+        "image": "image/p-Kaunghmudaw Pagoda.jpg",
         "description": "A large white-domed pagoda near Sagaing.",
         "region": "Sagaing Region",
         "detail": "<p><b>Kaunghmudaw Pagoda</b>,also known as <strong>Yaza Mani Sula Kaunghmudaw</strong>, is one of the most distinctive and revered pagodas in Myanmar. Located about <strong>10 kilometers west of Sagaing</strong>, the pagoda is famous for its massive white dome, which stands out against the surrounding landscape like a shining pearl. Built in <strong>1636</strong> by <strong>King Thalun</strong> to commemorate the establishment of Inwa (Ava) as his new capital, Kaunghmudaw was inspired by the Mahaceti Pagoda in Sri Lanka and symbolizes the unification of Buddhist faith and royal power. The enormous dome rises over <strong>46 meters</strong> high and has a circumference of more than <strong>270 meters</strong>, making it one of the largest stupas in the country. Unlike the typical bell-shaped pagodas of Myanmar, its rounded, egg-like form represents fertility and abundance. Inside the pagoda lies a sacred relic chamber enshrining important Buddhist relics and images. The outer terraces are lined with <strong>hundreds of small niches</strong>, each containing a Buddha image donated by devotees over the centuries. Every day, pilgrims and locals come to offer flowers, light candles, and walk clockwise around the pagoda as a form of worship. The site becomes especially lively during Buddhist festivals, when devotees gather to pay homage and celebrate. <u>Visiting Kaunghmudaw Pagoda offers travelers a serene and spiritual experience, a glimpse into the harmony of faith, architecture, and royal devotion that defines Myanmar’s rich heritage.</u></p>"
       },
       {
         "name": "Mingun",
-        "image": "./image/sagaing/mingun.jpg",
+        "image": "image/p-Mingun.jpg",
         "description": "Mingun Pagoda is a huge unfinished pagoda near Mandalay.",
         "region": "Sagaing Region",
         "detail": "<p><b>Mingun</b>is a small riverside town on the western bank of the <strong>Irrawaddy River</strong>, about <strong>11 kilometers north of Mandalay</strong>, famous for its remarkable historical and religious monuments. The area is best known for the massive unfinished structure of the <strong>Mingun Pahtodawgyi</strong>, a gigantic brick pagoda begun by <strong>King Bodawpaya</strong> in 1790. If it had been completed, it would have been the largest stupa in the world. Today, the enormous ruins—cracked by earthquakes but still majestic—stand as a symbol of ambition and faith. Nearby lies the <strong>Mingun Bell</strong>, one of the largest ringing bells in the world, weighing about <strong>90 tons</strong>, which was cast to accompany the great pagoda. Its deep, resonant sound is said to echo across the river. Another highlight is the beautiful <strong>Hsinbyume Pagoda</strong> (also called Myatheindan Pagoda), built by King Bagyidaw in memory of his beloved wife. Its unique white, wave-like terraces symbolize the seven mountain ranges surrounding Mount Meru, the mythical center of the Buddhist universe. Visitors often enjoy a scenic boat trip from Mandalay to Mingun, watching daily river life unfold along the way. The combination of ancient architecture, peaceful river views, and living culture makes Mingun a deeply memorable experience. <u>A visit to Mingun offers a perfect blend of history, legend, and spiritual beauty—an essential part of any journey to Myanmar’s royal heartland.</u></p>"
@@ -161,26 +161,26 @@
   },
   {
     "name": "Bago Region",
-    "image": "./image/r-bgo.jpg",
+    "image": "image/p-Shwethalyaung Reclining Buddha.jpg",
     "description": "A historic region with golden pagodas.",
     "places": [
       {
         "name": "Shwemawdaw Pagoda",
-        "image": "./image/bago/shwemawdaw.jpg",
+        "image": "image/p-Shwemawdaw Pagoda.jpg",
         "description": "The tallest pagoda in Myanmar.",
         "region": "Bago Region",
         "detail": "<p>The <b>Shwemawdaw Pagoda</b>, often called the <strong>‘Great Golden God’</strong>, is the tallest pagoda in Myanmar and one of the most sacred Buddhist monuments in the country. Located in the city of <strong>Bago</strong>, it rises an impressive <strong>114 meters</strong> high—surpassing even Yangon’s Shwedagon Pagoda in height—and dominates the skyline with its dazzling golden spire. The pagoda’s origins date back over a thousand years, to around the <strong>10th century</strong>, when it was first built by the Mon people to enshrine two sacred hair relics of the Buddha. Over the centuries, Burmese kings expanded and restored the pagoda, adding more relics and layers of gold, making it a symbol of devotion and unity between the Mon andBurmese cultures. Despite suffering heavy damage from earthquakes, particularly in <strong>1917</strong> and <strong>1930</strong>, Shwemawdaw has been faithfully rebuilt each time, standing today as a monument to resilience and faith. The main stupa gleams with real gold leaf and is surrounded by smaller shrines, Buddha images, and prayer halls, creating a sacred and peaceful atmosphere. During the annual Shwemawdaw Pagoda Festival, thousands of pilgrims gather to pay homage, meditate, and celebrate with traditional music and food. <u>A visit to Shwemawdaw Pagoda offers travelers a profound glimpse into Myanmar’s rich Buddhist heritage, its enduring faith, and the timeless beauty of its golden architecture.</u></p>"
       },
       {
         "name": "Kanbawzathadi Palace",
-        "image": "./image/bago/palace.jpg",
+        "image": "image/p-Kanbawzathadi Palace.jpg",
         "description": "A replica of King Bayinnaung’s 16th-century palace.",
         "region": "Bago Region",
         "detail": "<p>The <b>Kanbawzathadi Palace</b> in Bago is a magnificent reconstruction of the royal palace built by <strong>King Bayinnaung</strong> in the <strong>16th century</strong>, during the height of the Second Myanmar Empire. King Bayinnaung, known as one of Myanmar’s greatest monarchs, ruled over an empire that stretched across much of mainland Southeast Asia. His palace, originally constructed in <strong>1556</strong>, was a symbol of power, wealth, and artistic achievement. Though the original structure was destroyed by fire in the 16th century, the palace has been carefully rebuilt based on historical records and archaeological findings. The modern reconstruction captures the grandeur of the original, with its towering tiered roofs, gilded halls, and beautifully carved teakwood pillars.Visitors can explore several royal chambers, including the <strong>Bee Throne Hall</strong> (where the king held audiences), the <strong>Royal Apartments</strong>, and the <strong>Victory Hall</strong>, all decorated with traditional Burmese motifs and golden ornamentation. The palace compound also includes a museum displaying artifacts such as ancient weapons, royal regalia, and excavated remains from the original site. Surrounded by peaceful gardens and shimmering ponds, the palace evokes the splendor and elegance of the golden age of the Mon Kingdom and the Taungoo Dynasty. <u>A visit to Kanbawzathadi Palace allows travelers to step back into Myanmar’s royal past and experience the architectural brilliance and cultural pride of King Bayinnaung’s glorious reign.</u></p>"
       },
       {
         "name": "Shwethalyaung Reclining Buddha",
-        "image": "./image/bago/shwethalyaung.jpg",
+        "image": "image/p-Shwethalyaung Reclining Buddha.jpg",
         "description": "Shwethalyaung Reclining Buddha in Bago is a massive 55-meter-long gilded Buddha statue.",
         "region": "Bago Region",
         "detail": "<p>The <b>Shwethalyaung Reclining Buddha</b> in Bago is one of the largest and most impressive Buddha images in Myanmar, measuring about <strong>55 meters long</strong> and <strong>16 meters high</strong>. This magnificent statue depicts the Buddha in a reclining posture, representing his passing into Parinirvana, the final state of enlightenment. Originally built in <strong>994 AD</strong> during the reign of King Migadepa, the image was later rediscovered and restored, preserving its serene beauty and historical significance. The reclining Buddha lies on a platform adorned with intricate carvings and colorful murals that illustrate scenes from the Buddha’s life and teachings. Devotees and visitors often walk along the length of the statue, offering flowers, candles, and prayers, while observing the peaceful expression on the Buddha’s face. The temple complex also features numerous smaller pagodas, statues,and meditation halls, creating a serene environment for worship and reflection. The combination of the colossal size, artistic detail, and spiritual aura makes Shwethalyaung a remarkable site for pilgrims and tourists alike. <u>A visit to the Shwethalyaung Reclining Buddha is a deeply moving experience, offering insight into Myanmar’s devotion, artistry, and Buddhist heritage.</u></p>"
@@ -189,26 +189,26 @@
   },
   {
     "name": "Ayeyarwady Region",
-    "image": "./image/r-ayd.jpg",
+    "image": "image/p-ngwe saung beach.jpg",
     "description": "Delta region with rivers, farms, and beaches.",
     "places": [
       {
         "name": "Ngwe Saung Beach",
-        "image": "./image/ayeyarwady/ngwesaung.jpg",
+        "image": "image/p-ngwe saung beach.jpg",
         "description": "A popular white-sand beach on the Bay of Bengal.",
         "region": "Ayeyarwady Region",
         "detail": "<p>The <strong>Ngwe Saung Beach</strong>, located on the western coast of the <strong>Ayeyarwady Region</strong>, is one of Myanmar’s most beautiful and tranquil seaside destinations. Stretching over <strong>15 kilometers</strong> along the Bay of Bengal, Ngwe Saung—meaning ‘Silver Beach’—is known for its pristine white sand, clear blue waters, and peaceful atmosphere. Unlike many crowded tourist beaches, Ngwe Saung offers a perfect escape for relaxation and natural beauty. Lined with coconut palms and small fishing villages, the beach retains an authentic, untouched charm. Visitors can swim, sunbathe, or stroll along the shore while enjoying the gentle sea breeze and the sound of waves. Offshore, small islands such as <strong>Lovers’ Island</strong> can be reached by foot during low tide, offering scenic views and photo opportunities. The beach area also provides activities like snorkeling, jet skiing, and cycling along coastal paths. Fresh seafood restaurants and cozy resorts line the beachfront, offering local delicacies and stunning sunset views over the ocean. At night, the beach becomes calm and romantic, with the stars reflecting on the quiet sea. <u>A visit to Ngwe Saung Beach promises a perfect blend of relaxation and adventure—a serene tropical paradise where travelers can experience the simple beauty of Myanmar’s coastline and the warm hospitality of its people.</u></p>"
       },
       {
         "name": "Pathein Umbrella Workshop",
-        "image": "./image/ayeyarwady/pathein-umbrella.jpg",
+        "image": "image/p-Pathein Umbrella Workshop.jpg",
         "description": "Famous for traditional handmade umbrellas.",
         "region": "Ayeyarwady Region",
         "detail": "<p>The <strong>Pathein Umbrella Workshop</strong>, located in the <strong>Ayeyarwady Region</strong>, is famous for producing Myanmar’s traditional handcrafted parasols known as <strong>Pathein umbrellas</strong>. These beautiful umbrellas are made using bamboo, wood, and handmade paper, and are admired for their vibrant colors and intricate designs. The art of making these umbrellas has been passed down through generations and remains a proud cultural heritage of the local artisans. Visitors to the workshop can observe the entire production process—from splitting bamboo for the frame, shaping and assembling the handle, to painting delicate floral and geometric patterns by hand. Each umbrella is carefully crafted without the use of machines, demonstrating the remarkable skill and patience of the craftsmen. These umbrellas are not only used for protection from sun and rain but also serve as decorative items, often seen in festivals, traditional performances, and home décor. The workshop provides an excellent opportunity to learn about local craftsmanship, interact with artisans, and even purchase a handmade umbrella as a memorable souvenir. <u>Visiting the Pathein Umbrella Workshop offers a glimpse into Myanmar’s artistic traditions and the dedication of its artisans who keep this timeless craft alive.</u></p>"
       },
       {
         "name": "Meinmahla Kyun Wildlife Sanctuary",
-        "image": "./image/ayeyarwady/wildlife.jpg",
+        "image": "image/p-Meinmahla Kyun Wildlife Sanctuary.jpeg",
         "description": "Meinmahla Kyun Wildlife Sanctuary in the Ayeyarwady Delta is a mangrove forest known for saltwater crocodiles and rich biodiversity.",
         "region": "Ayeyarwady Region",
         "detail": "<p>The <strong>Meinmahla Kyun Wildlife Sanctuary</strong> is a pristine and ecologically rich mangrove reserve located in the <strong>Ayeyarwady Delta Region</strong> of southern Myanmar. Covering an area of about <strong>52,000 hectares</strong>, the sanctuary was established in <strong>1993</strong> to protect the unique mangrove ecosystems and the diverse wildlife that depend on them. Recognized as a <strong>UNESCO Biosphere Reserve</strong>, Meinmahla Kyun is home to a wide range of species, including the endangered <strong>saltwater crocodile</strong>, smooth-coated otters, monitor lizards, and numerous species of migratory and resident birds. The dense mangrove forests also serve as vital breeding grounds for fish, shrimp, and crabs,supporting the livelihoods of nearby coastal communities. The sanctuary consists of a network of tidal creeks, mudflats, and islands, making it an ideal habitat for wildlife observation and eco-tourism. Visitors can explore the area by small boat, gliding quietly through the mangrove tunnels while spotting crocodiles basking on the banks or herons perched on roots. The tranquil beauty of the sunrise and sunset over the delta adds to the magical atmosphere of the reserve. Conservation efforts are ongoing to balance the protection of wildlife with the sustainable use of natural resources by local villagers. <u>A visit to Meinmahla Kyun Wildlife Sanctuary offers travelers a rare opportunity to experience Myanmar’s rich biodiversity, learn about mangrove conservation, and enjoy the serene beauty of the Ayeyarwady Delta’s natural landscape.</u></p>"
@@ -290,24 +290,24 @@
   },
   {
     "name": "Kachin State",
-    "image": "./image/kachin.jpg",
+    "image": "image/p-Putao.jpeg",
     "description": "Mountainous region with rich natural resources.",
     "places": [
       {
         "name": "Myitsone",
-        "image": "./image/kachin/myitsone.jpg",
+        "image": "image/p-myitsone.jpg",
         "description": "The confluence of the Mali and N’Mai rivers.",
         "detail": "<p><b>Myitsone</b> is a remote and sacred region located in the northern part of <strong>Kachin State</strong>, Myanmar, at the confluence of the <strong>Maykha and Mali Rivers</strong> where they form the Irrawaddy River, the country’s most important waterway. Known as the <strong>Myitsone Confluence</strong>, this area is surrounded by lush forests, rolling hills, and misty mountains, offering a serene and breathtaking natural landscape. The site holds deep spiritual significance for the local <strong>Kachin people</strong>, who consider it a sacred place where spirits dwell, and it has traditionally been a site for rituals and offerings. The region is relatively untouched, with few settlements, allowing travelers to experience a pristine environment rich in biodiversity, including rare birds and unique plant species. The dramatic scenery of rivers merging amid verdant hills makes Myitsone a photographer’s paradise, especially during sunrise when the waters shimmer with golden light. Despite being remote and less accessible, it attracts eco-tourists and those interested in cultural heritage, spirituality, and nature exploration. <u>A visit to Myitsone offers an extraordinary opportunity to witness Myanmar’s natural beauty, spiritual traditions, and the harmony between the local people and their environment.</u></p>"
       },
       {
         "name": "Indawgyi Lake",
-        "image": "./image/kachin/indawgyi.jpg",
+        "image": "image/p-Indawgyi Lake.jpg",
         "description": "The largest inland lake in Myanmar.",
         "detail": "<p><b>Indawgyi Lake,</b> located in the northern part of <strong>Kachin State</strong>, Myanmar, is the country’s largest freshwater lake and one of Southeast Asia’s most important wetland ecosystems. Covering approximately <strong>47,000 hectares</strong>, the lake is surrounded by rolling hills, dense forests, and small villages, creating a serene and picturesque environment. Indawgyi Lake is a haven for biodiversity, home to a variety of fish, amphibians, and bird species, including migratory birds such as herons, storks, and pelicans. The surrounding wetlands and forested areas provide habitats for endangered species like the <strong>Asian elephant</strong>,<strong>tiger</strong>, and rare freshwater turtles. Local communities living around the lake rely on fishing and small-scale agriculture, and they maintain traditional lifestyles that have been preserved for generations. Visitors can enjoy boat trips on the calm waters, birdwatching, or trekking in the surrounding hills while experiencing the peaceful rural life of northern Myanmar. The combination of natural beauty, rich wildlife, and cultural heritage makes Indawgyi Lake a unique destination for eco-tourism and nature enthusiasts. <u>A visit to Indawgyi Lake offers an unforgettable opportunity to explore Myanmar’s pristine landscapes, observe diverse wildlife, and connect with the tranquil rhythms of life around this remarkable freshwater ecosystem.</u></p>"
       },
       {
         "name": "Putao",
-        "image": "./image/kachin/putao.jpg",
+        "image": "image/p-Putao.jpeg",
         "description": "Putao is a scenic town in Kachin State, famous for snow-capped mountains, trekking, and rare orchids.",
         "detail": "<p><b>Putao</b> is a remote and scenic town located in the northernmost part of Myanmar, in the <strong>Kachin State</strong>, nestled within the majestic Himalayan foothills. Surrounded by snow-capped peaks, lush forests, and pristine rivers, Putao is renowned for its stunning natural beauty and rich biodiversity. The area is a paradise for trekking, mountaineering, and adventure tourism, offering trails that lead to dense pine forests, alpine meadows, and traditional villages inhabited by the indigenous <strong>Rawang, Lisu, and Lahu</strong> communities. Putao also serves as a gateway to some of Myanmar’s highest mountains, including <strong>Hkakabo Razi</strong>, the country’s tallest peak, attracting climbers and explorers from around the world. The town itself is peaceful and small, with a few local markets, guesthouses, and tea shops that provide a glimpse into local life. Visitors can enjoy birdwatching, river rafting, and immersing themselves in the unique cultures of the ethnic communities. The cool climate, fresh mountain air, and breathtaking scenery make Putao a perfect destination for nature lovers and adventure seekers. <u>A visit to Putao offers an unforgettable journey into the untouched landscapes and cultural richness of northern Myanmar, far from the bustle of the cities.</u></p>"
 
@@ -358,24 +358,24 @@
   },
   {
     "name": "Chin State",
-    "image": "./image/chin.jpg",
+    "image": "image/p-Mount Victoria (Nat Ma Taung).jpg",
     "description": "Remote and mountainous, home to ethnic Chin people.",
     "places": [
       {
         "name": "Mount Victoria (Nat Ma Taung)",
-        "image": "./image/chin/mountvictoria.jpg",
+        "image": "image/p-Mount Victoria (Nat Ma Taung).jpg",
         "description": "Highest peak in Chin State, inside Nat Ma Taung National Park.",
         "detail": "<p>Mount Victoria, also known as <strong>Nat Ma Taung</strong>, is the highest peak in <strong>Chin State</strong> and one of Myanmar’s most stunning natural landmarks. Rising to an elevation of about <strong>3,053 meters (10,016 feet)</strong> above sea level, the mountain lies within the <strong>Nat Ma Taung National Park</strong>, a UNESCO Biosphere Reserve known for its incredible biodiversity and breathtaking scenery. The region is home to rare and endemic plant and animal species, including colorful orchids, rhododendrons, and unique bird species such as the <strong>Chin Hills wren-babbler</strong>. The journey to Mount Victoria takes travelers through remote Chin villages, where traditional houses, handwoven textiles, and the hospitality of local people offer a glimpse into the unique Chin culture. The trek to the summit rewards adventurers with panoramic views of misty mountains, deep valleys, and untouched forests stretching as far as the eye can see. The cool, refreshing climate and the peaceful environment make it a perfect escape from the bustle of city life. <u>A visit to Mount Victoria promises an unforgettable experience for nature lovers, trekkers, and anyone seeking to discover the beauty and cultural richness of Myanmar’s highlands.</u></p>"
       },
       {
         "name": "Mindat",
-        "image": "./image/chin/mindat.jpg",
+        "image": "image/p-Mindat.jpg",
         "description": "Known for traditional Chin culture and tattooed women.",
         "detail": "<p>Mindat is a charming mountain town located in <strong>Chin State</strong>, Myanmar, perched on the slopes of the Chin Hills at an altitude of about <strong>1,480 meters (4,860 feet)</strong>. It is best known for its rich Chin culture, breathtaking landscapes, and traditional way of life that remains beautifully preserved. Visitors to Mindat can meet the friendly <strong>Chin people</strong>, famous for their unique customs and traditional facial tattoos — an ancient art form once practiced by Chin women as a sign of beauty and identity. The town is surrounded by misty mountains, green valleys, and cascading rivers, making it an ideal destination for trekkers and nature lovers. Travelers can explore traditional bamboo houses, local markets, and experience vibrant tribal music played on handmade instruments such as the <strong>mouth harp (Khway)</strong>. The nearby <strong>Mount Victoria (Nat Ma Taung) National Park</strong> offers excellent trekking routes and opportunities to discover rare wildlife and endemic flora. The peaceful atmosphere, combined with the warmth of local hospitality, gives Mindat a special charm that captures the heart of every visitor. <u>A visit to Mindat is not just a journey through nature, but also a deep cultural experience that reveals the soul of Myanmar’s Chin Hills.</u></p>"
       },
       {
         "name": "Rih Lake",
-        "image": "./image/chin/rih lake.jpg",
+        "image": "image/p0-Rih Lake.jpg",
         "description": "Rih Lake in Chin State is a heart-shaped natural lake known for its beauty and legends.",
         "detail": "<p>Rih Lake, also known as <strong>Rih Dil</strong>, is a beautiful heart-shaped lake located in <strong>Falam Township, Chin State</strong>, near the India-Myanmar border. It is one of the most famous natural and cultural landmarks in the Chin Hills, surrounded by green mountains, pine forests, and misty air. The lake holds deep spiritual significance for the Chin people, who believe it to be the mythical gateway to the afterlife, where souls pass on their journey after death. Despite this legend, Rih Lake is a place of peace and serenity, attracting both pilgrims and travelers seeking tranquility and natural beauty. The crystal-clear water reflects the surrounding hills, creating a stunning view, especially at sunrise and sunset. Visitors can walk along the lakeside, interact with local villagers, and learn about the fascinating Chin traditions and folklore. The area around the lake also offers scenic trails for hiking and photography, with cool weather all year round. <u>A visit to Rih Lake is not only a visual delight but also a spiritual and cultural experience that connects visitors to the deep heritage and natural charm of Chin State.</u></p>"
       }
@@ -383,24 +383,24 @@
   },
   {
     "name": "Kayah State",
-    "image": "./image/kayah.jpg",
+    "image": "image/p-Loikaw.jpg",
     "description": "Small state with unique ethnic traditions.",
     "places": [
       {
         "name": "Loikaw",
-        "image": "./image/kayah/loikaw.jpg",
+        "image": "image/p-Loikaw.jpg",
         "description": "Capital of Kayah, famous for Taung Kwe Pagoda.",
         "detail": "<p><b>Loikaw</b> is the charming capital of <strong>Kayah State</strong> in eastern Myanmar, known for its unique cultural heritage, natural beauty, and peaceful atmosphere. Surrounded by rolling hills, serene lakes, and traditional villages, Loikaw offers a glimpse into the authentic life of Myanmar’s ethnic minorities, especially the <strong>Kayan (Padaung) people</strong>, famous for their distinctive long-neck brass rings. The city’s most iconic landmark is the <strong>Taung Kwe Pagoda</strong>, built on a series of limestone cliffs that overlook the entire town. From the top, visitors can enjoy a panoramic view of Loikaw’s green valleys and golden pagodas, especially breathtaking at sunrise and sunset. Nearby, travelers can explore local markets filled with handmade crafts, taste Kayah sausage — a regional delicacy — and visit peaceful villages where traditional weaving and farming are still practiced. The surrounding countryside also offers attractions like <strong>Htee Se Khar Waterfall</strong> and <strong>Seven Stages Lake</strong>, ideal for nature lovers and photographers. <u>A visit to Loikaw is a journey into Myanmar’s heartland — a place where culture, tradition, and natural beauty exist in perfect harmony, offering travelers an unforgettable and truly authentic experience.</u></p>"
       },
       {
         "name": "Panpet Village",
-        "image": "./image/kayah/panpet.jpg",
+        "image": "image/p-Panpet Village.jpg",
         "description": "Home of the Kayan ‘long neck’ women.",
         "detail": "<p><b>Panpet Village</b> is one of the most famous traditional villages in <strong>Kayah State</strong>, Myanmar, located about 20 kilometers from <strong>Loikaw</strong>. It is home to the <strong>Kayan (Padaung) people</strong>, best known for the women who wear distinctive brass neck rings — a cultural symbol that has made the village world-renowned. Visiting Panpet offers travelers a rare opportunity to experience authentic Kayan traditions, crafts, and daily life in a peaceful mountain setting. The villagers are skilled artisans, creating beautiful handmade textiles, bamboo crafts, and jewelry, all using traditional methods passed down through generations. Tourists can join guided walks through the village, meet local families, and learn about the meaning and history behind the Kayan’s unique customs. The surrounding area is filled with scenic hills, farms, and forests, perfect for light trekking and cultural photography. Visitors can also enjoy traditional Kayah music, dances, and local cuisine, making the experience even richer. <u>A visit to Panpet Village is more than just sightseeing — it’s an inspiring cultural encounter that connects travelers to the spirit, artistry, and heritage of the Kayan people.</u></p>"
       },
       {
         "name": "Htee Se Khar Waterfall",
-        "image": "./image/kayah/htee se khar waterfall.jpg",
+        "image": "image/p-Htee Se Khar Waterfall.jpg",
         "description": "A beautiful natural waterfall near Loikaw, great for picnics and relaxation.",
         "detail": "<p><b>Htee Se Khar Waterfall</b> is one of the most breathtaking natural attractions in <strong>Kayah State</strong>, Myanmar. Located near <strong>Loikaw</strong>, this magnificent waterfall cascades down from limestone cliffs into a clear blue pool surrounded by lush greenery and rocky landscapes. The sound of rushing water and the cool mist in the air create a refreshing and peaceful atmosphere, perfect for relaxation and nature photography. During the rainy season, the waterfall becomes even more powerful, creating a spectacular sight as it flows through the dense forest. The area around Htee Se Khar is also rich in biodiversity, with colorful butterflies, birds, and tropical plants adding to the beauty of the scene. Local villagers often visit the site for picnics and festivals, making it a lively yet tranquil destination. Visitors can enjoy a short trek through the forest to reach the falls, experiencing the pure natural charm of Kayah’s countryside along the way. <u>A trip to Htee Se Khar Waterfall offers travelers an unforgettable escape into nature — a perfect blend of adventure, serenity, and scenic wonder.</u></p>"
       }
@@ -545,25 +545,25 @@
   },
   {
     "name": "Naypyidaw Union Territory",
-    "image": "./image/naypyidaw.jpg",
+    "image": "image/p-Naypyidaw Union Territory.jpg",
     "description": "The capital city of Myanmar, built in the 2000s.",
     "places": [
       {
         "name": "Uppatasanti Pagoda",
-        "image": "./image/naypyidaw/uppatasanti.jpg",
+        "image": "image/p-Uppatasanti Pagoda.jpg",
         "description": "A replica of Shwedagon Pagoda.",
         "detail": "<p><b>The Uppatasanti Pagoda</b>, also known as the <strong>Peace Pagoda</strong>, is the most iconic landmark in <strong>Naypyidaw</strong>, the capital of Myanmar. Standing at a height of <strong>99 meters</strong>, it is a magnificent replica of Yangon’s famous <strong>Shwedagon Pagoda</strong> and symbolizes peace and national unity. Completed in <strong>2009</strong>, the pagoda enshrines a sacred relic of the <strong>Buddha’s tooth</strong>, making it a deeply revered site for Buddhist devotees. Surrounded by beautifully landscaped gardens and a peaceful atmosphere, Uppatasanti Pagoda shines brilliantly under the sun and glows beautifully at night. Inside, visitors can see exquisite golden Buddha images, murals depicting the Buddha’s life, and intricate carvings showcasing traditional Myanmar art. The pagoda complex also includes a <strong>Bodhi tree</strong> grown from a seed of the original tree in India, a <strong>museum</strong> of Buddhist artifacts, and a <strong>religious teaching hall</strong>. From the top terrace, travelers can enjoy panoramic views of Naypyidaw and its wide, clean avenues. <u>A visit to the Uppatasanti Pagoda offers peace, beauty, and spiritual inspiration — a must-see destination that reflects the faith and cultural pride of the Myanmar people.</u></p>"
       },
       {
         "name": "National Museum",
-        "image": "./image/naypyidaw/museum.jpg",
+        "image": "image/p-National Museum.jpg",
         "description": "A museum showcasing Myanmar’s history and culture.",
         "detail": "<p>The <strong>National Museum of Myanmar</strong>, located in <strong>Naypyidaw</strong>, is the country’s premier institution for preserving and showcasing Myanmar’s rich cultural, historical, and artistic heritage. The museum houses a vast collection of artifacts spanning thousands of years, including royal regalia, traditional costumes, ancient sculptures, inscriptions, and religious relics. Visitors can explore exhibits dedicated to Myanmar’s diverse ethnic groups, learning about their customs, crafts, and lifestyles through carefully curated displays. One of the highlights is the <strong>Royal Throne Room</strong>, which features replicas of royal thrones and ceremonial objects from the Konbaung Dynasty. The museum also presents stunning examples of traditional arts such as lacquerware, woodcarving, and pottery, alongside natural history exhibits and ethnographic displays. Guided tours and informative signage provide context and deeper understanding of Myanmar’s complex history, from ancient civilizations to modern times. The museum is surrounded by well-maintained gardens, creating a serene environment for reflection and study. <u>A visit to the National Museum of Myanmar offers travelers an enriching experience, combining education, culture, and a deeper appreciation of the country’s heritage and identity.</u></p>"
 
       },
       {
         "name": "Naypyidaw Zoological Garden",
-        "image": "./image/naypyidaw/naypyidaw zoological garden.jpg",
+        "image": "image/p-Naypyidaw Zoological Garden.jpg",
         "description": "The largest zoo in Myanmar, home to many native and exotic animals.",
         "detail": "<p><b>The Naypyidaw Zoological Garden</b> is the largest and most modern zoo in Myanmar, located in the country’s capital city, <strong>Naypyidaw</strong>. Opened in <strong>2008</strong>, it covers an impressive area of about <strong>612 acres</strong> and is home to a wide variety of animals from Myanmar and around the world. Visitors can see more than <strong>1,000 animals</strong>, including rare species such as white tigers, giraffes, zebras, penguins, and elephants. The zoo is beautifully designed with spacious enclosures, natural habitats, and clean walking paths surrounded by lush greenery, making it enjoyable for families and nature lovers alike. One of the main attractions is the <strong>Penguin House</strong>, where visitors can observe penguins in a cool, air-conditioned environment — a unique experience in tropical Myanmar. There is also an <strong>aquarium</strong> and a <strong>reptile house</strong>, offering an educational insight into the country’s diverse wildlife. The zoo focuses on wildlife conservation and environmental education, making it both fun and meaningful. <u>A visit to the Naypyidaw Zoological Garden is a refreshing and educational experience, perfect for travelers seeking to enjoy nature, learn about animals, and explore one of Myanmar’s most family-friendly attractions.</u></p>"
       }
