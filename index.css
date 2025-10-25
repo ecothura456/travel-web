@@ -245,6 +245,15 @@ navbar .nav-link {
   }
 }
 
+/* footer css */
+footer a:hover {
+  color: #198754;
+}
+footer h5 {
+  font-size: 1rem;
+  letter-spacing: 0.3px;
+}
+
 
 
 /*rgba(96, 94, 94, 0.7)
