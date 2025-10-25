@@ -163,17 +163,28 @@
 
 }
 
-.navbar .nav-link {
-  color:rgb(147, 111, 111); /* default color */
+/* .navbar .nav-link {
+  color:rgb(147, 111, 111);
   text-decoration: none;
   padding:15px;
   display:block;
   text-align: center;
-  }
+  } */
   
-  .navbar .nav-link:hover {
-  background-color: goldenrod /* bright green hover color */
-  }
+  /* .navbar .nav-link:hover {
+  background-color: goldenrod
+  } */
+
+.navbar .nav-link {
+  text-decoration: none;
+  position: relative;
+  transition: all 0.5s;
+}
+
+.navbar .nav-link:hover {
+  color: black;
+  text-shadow: 0 0 10px #0D7CFF, 0 0 20px #0D7CFF, 0 0 30px #0D7CFF, 0 0 40px #0D7CFF;
+}
 
   
 
