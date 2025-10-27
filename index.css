@@ -220,7 +220,7 @@
   color: #fff6d5;
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
   letter-spacing: 1px;
-  margin-top: -10px;
+  margin-top: 25px;
   animation: fadeIn 2s ease-in-out;
 }
 
@@ -237,7 +237,7 @@
   padding-top:20px;}
   
 
-.home-text {
+.hero .home-text {
   font-size: 68px;
   font-family: 'Pattaya', 'Zawgyi-One', cursive; /* graceful and culturally fitting */
   color: #fcfbf9; /* golden tone */
