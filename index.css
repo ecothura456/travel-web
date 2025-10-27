@@ -263,15 +263,119 @@
 }
 
 /* footer css */
-footer a:hover {
-  color: #198754;
+/* Fix Footer Styling to match a clean, modern design */
+
+/* 1. Basic Footer Container Styling */
+footer {
+  /* Use the background color from your HTML: #b6b9bc (a light gray) */
+  background: white !important; /* Use a slightly lighter gray for a cleaner look */
+  padding: 50px 0 20px !important; /* Adjust padding */
+  color:black; /* Ensure general text color is dark */
 }
+
+/* 2. Style for the Column Headings */
+/* Target the h5 inside the columns */
+footer .col-md-3 h5 {
+  color: var(--ink) !important; /* Ensure headings are the main dark color */
+  font-weight: 700 !important; /* Make them bold */
+  font-size: 1.1rem !important; /* Slightly smaller than default for clean look */
+  margin-bottom: 15px !important; /* Add space below headings */
+  text-transform: uppercase; /* Optional: Make headings all caps */
+  letter-spacing: 0.5px;
+}
+
+/* 3. Style for the Links */
+/* Target all links inside the list-unstyled */
+footer .list-unstyled li a {
+  /* Change the link color from Bootstrap's .text-muted default */
+  color:black!important; /* Use your muted grey variable for links */
+  text-decoration: none !important;
+  font-size: 0.95rem !important;
+  transition: color 0.25s ease;
+  display: block; /* Make the whole list item clickable area */
+  padding: 2px 0; /* Slight vertical padding for better click area */
+}
+
+/* Link Hover State */
+footer .list-unstyled li a:hover {
+  color:black !important; /* Use your brand color on hover */
+  text-decoration:underline!important;
+}
+
+/* 4. Copyright Section Styling */
+footer .text-muted.small {
+  color:black !important; /* Ensure copyright text uses the muted color */
+  font-size: 0.85rem !important; /* Make it slightly smaller */
+  padding-top: 10px;
+}
+
+/* 5. Horizontal Rule Styling */
+footer hr.my-4 {
+  border-top: 1px solid var(--ring) !important; /* Use the light border color */
+  opacity: 1; /* Ensure it's fully visible */
+  margin-top: 30px !important;
+  margin-bottom: 15px !important;
+}
+
+a {
+  text-decoration: underline;
+  transition: all 0.4s;
+}
+
+a:hover {
+  letter-spacing: 3px;
+}
+/* ✨ Animate only footer section titles ✨ */
 footer h5 {
-  font-size: 1rem;
-  letter-spacing: 0.3px;
+  position: relative;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: var(--ink);
+  display: inline-block;
+  animation: fadeInUp 1s ease forwards;
+}
+
+/* Optional staggered delay for each title */
+footer .col-md-3:nth-child(1) h5 {
+  animation-delay: 0.2s;
+}
+footer .col-md-3:nth-child(2) h5 {
+  animation-delay: 0.4s;
+}
+footer .col-md-3:nth-child(3) h5 {
+  animation-delay: 0.6s;
+}
+footer .col-md-3:nth-child(4) h5 {
+  animation-delay: 0.8s;
+}
+
+/* Add underline effect when hovered */
+footer h5::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background-color: var(--brand);
+  transition: width 0.4s ease;
+}
+
+footer h5:hover::after {
+  width: 100%;
+}
+
+/* Fade-up keyframes */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 
-
-/*rgba(96, 94, 94, 0.7)
 
