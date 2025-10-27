@@ -15,6 +15,68 @@
 
 
 <style>
+:root{
+  --brand:#198754;
+  --ink:#1f2937;
+  --muted:#6b7280;
+  --ring:#e5e7eb;
+  --card:#ffffff;
+  --bg:#f7f7fb;
+}
+
+
+html, body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: 'Poppins', sans-serif;
+}
+  /* Navbar hover effects */
+
+/* --- Navbar Custom Style --- */
+/* Modern clean travel-style navbar */
+.navbar ul{
+  list-style-type: none;
+  padding: 0px;
+  margin:0px;
+
+}
+
+.navbar .nav-link {
+  color:white; /* default color */
+  text-decoration: none;
+  padding:15px;
+  display:block;
+  text-align: center;
+  }
+  
+  .navbar .nav-link:hover {
+  background-color: goldenrod /* bright green hover color */
+  }
+
+/*.background-title {
+  font-size:200px;
+  font-weight: bold;
+  font-family:'Times New Roman', Times, serif;
+  color:rgb(247, 209, 21);}*/
+
+
+  .logo-circle {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    border: 2px solid whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  .logo-circle img {
+    width: 300%;
+    height: 300%;
+    object-fit: cover;}
+
 .page-hero{
   position: relative;
   padding: 80px 0 60px;
@@ -74,7 +136,7 @@
         <div class="logo-circle me-2">
           <img src="./image/nav-logo.png" alt="Myanmar Travel Logo">
         </div>
-        <span class="fw-bold ">MYANMAR TRAVEL</span>
+        <span class="fw-bold">MYANMAR TRAVEL</span>
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#travelNavbar" aria-controls="travelNavbar" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
