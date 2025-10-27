@@ -23,7 +23,27 @@
   <link rel="stylesheet" href="./index.css">
 
   <style>
-    .hero h1 { font-size: 3rem; font-weight: bold; }
+    input :focus {
+      border-color:green;
+    }
+    body { font-family: 'Poppins', sans-serif; }
+    
+    
+    
+
+    /* Hero Section */
+    .hero {
+      background: url('./image/B01.jpg') center/cover no-repeat;
+      height: 90vh;
+     
+        
+      display: flex;
+      align-items: center;
+      text-align: center;
+    }
+
+    
+    .hero h1 { font-size: 7rem; font-weight: bold; }
 
     .card img { height: 200px; object-fit: cover; }
 
@@ -41,7 +61,8 @@
       <span class="fw-bold">MYANMAR TRAVEL</span>
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#travelNavbar" aria-controls="travelNavbar" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+    <span class="nav-link active fw-bold">MYANMAR TRAVEL</span>
+
     </button>
 
     <div class="collapse navbar-collapse" id="travelNavbar">
