@@ -38,7 +38,13 @@
         "name": "Burmese Biryani",
         "image": "image/burmese biryani.jpg",
         "description": "A fragrant rice dish cooked with spiced chicken, cardamom, and cloves — a Burmese twist on classic biryani with rich flavors."
+      },
+      {
+        "name": "Mont Phet Htok",
+        "image": "image/Mont-Phet-Htok-Burma.jpg",
+        "description": "A traditional Burmese snack made of steamed sticky rice with a sweet coconut filling wrapped in banana leaves."
       }
+      
     ]
   },
   {
